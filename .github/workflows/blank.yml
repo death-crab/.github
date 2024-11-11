@@ -1,0 +1,31 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: self-hosted
+    
+    env:
+      NuGetPackageSourceCredentials_death-crab: Username=github;Password=${{ secrets.GITHUB_TOKEN }}
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Generate Package Info
+      run: |
+        cd packages
+        dotnet package search --source https://nuget.pkg.github.com/death-crab/index.json --format json > package-info.json
+
+    - name: Push Package Info to Public Repo
+      run: |
+        git add package-info.json
+        git commit -m "Update package info [skip ci]"
+        git push
