@@ -21,11 +21,10 @@ jobs:
 
     - name: Generate Package Info
       run: |
-        cd packages
-        dotnet package search --source https://nuget.pkg.github.com/death-crab/index.json --format json > package-info.json
+        dotnet package search --source https://nuget.pkg.github.com/death-crab/index.json --format json > packages/package-info.json
 
     - name: Push Package Info to Public Repo
       run: |
-        git add package-info.json
+        git add packages/package-info.json
         git commit -m "Update package info [skip ci]"
         git push
