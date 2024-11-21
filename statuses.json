@@ -1,7 +1,7 @@
 {
   "example-repo/main": {
     "branch": "main",
-    "status": "success",
+    "status": "fail",
     "color": "brightgreen"
   }
 }
