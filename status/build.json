@@ -4,5 +4,11 @@
     "status": "success",
     "color": "brightgreen",
     "last_updated": "2024-11-21T20:40:00Z"
+  },
+  "deathcrab-base/main": {
+    "branch": "main",
+    "status": "success",
+    "color": "brightgreen",
+    "last_updated": "2024-11-21T20:43:07Z"
   }
 }
