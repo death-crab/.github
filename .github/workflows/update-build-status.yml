@@ -40,12 +40,16 @@ jobs:
         else
           COLOR="grey"
         fi
-
+        
+        # Get current timestamp in ISO 8601 format
+        LAST_UPDATED=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+        
         # Load and update JSON
         jq --arg repo "$PAYLOAD_REPO/$PAYLOAD_BRANCH" \
            --arg branch "$PAYLOAD_BRANCH" \
            --arg status "$PAYLOAD_STATUS" \
-           --arg color "$COLOR" \
+           --arg color "$COLOR" \           
+           --arg updated "$LAST_UPDATED" \
            '.[$repo] = {branch: $branch, status: $status, color: $color}' \
            status/build.json > status/build.json.tmp && mv status/build.json.tmp status/build.json
 
