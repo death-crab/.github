@@ -1,0 +1,52 @@
+name: Handle Repository Dispatch
+
+on:
+  repository_dispatch:
+    types:
+      - update-status
+
+jobs:
+  update-badge:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Fetch current status JSON
+      run: |
+        if [ ! -f statuses.json ]; then
+          echo "[]" > statuses.json
+        fi
+      # Save statuses.json in the workspace for later modification
+      id: fetch
+
+    - name: Update status JSON
+      id: update-json
+      run: |
+        PAYLOAD_REPO="${{ github.event.client_payload.repository }}"
+        PAYLOAD_BRANCH="${{ github.event.client_payload.branch }}"
+        PAYLOAD_STATUS="${{ github.event.client_payload.status }}"
+
+        # Read the existing statuses
+        STATUSES=$(cat statuses.json)
+
+        # Create a new entry or update the existing one
+        UPDATED=$(echo "$STATUSES" | jq --arg repo "$PAYLOAD_REPO" --arg branch "$PAYLOAD_BRANCH" --arg status "$PAYLOAD_STATUS" \
+          'map(if .repo == $repo and .branch == $branch then .status = $status else . end) | 
+          if map(.repo == $repo and .branch == $branch) | any then . else . + [{repo: $repo, branch: $branch, status: $status}] end')
+
+        # Write the updated JSON back
+        echo "$UPDATED" > statuses.json
+
+    - name: Commit and push updated JSON
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+
+        git add statuses.json
+        git commit -m "Update build statuses [skip ci]"
+        git push
+
