@@ -50,7 +50,7 @@ jobs:
            --arg status "$PAYLOAD_STATUS" \
            --arg color "$COLOR" \           
            --arg updated "$LAST_UPDATED" \
-           '.[$repo] = {branch: $branch, status: $status, color: $color}' \
+           '.[$repo] = {branch: $branch, status: $status, color: $color, last_updated: $updated}' \
            status/build.json > status/build.json.tmp && mv status/build.json.tmp status/build.json
 
     - name: Commit and push updated build.json
