@@ -1,7 +1,7 @@
 {
   "example-repo/main": {
-    "label": "main"
-    "message": "success"
+    "label": "main",
+    "message": "success",
     "color": "brightgreen"
 }
 
