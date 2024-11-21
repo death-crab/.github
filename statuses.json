@@ -1,5 +1,6 @@
 {
   "example-repo/main": {
+    "schemaVersion": 1,
     "label": "main",
     "message": "success",
     "color": "brightgreen"
