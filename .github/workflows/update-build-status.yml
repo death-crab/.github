@@ -29,6 +29,9 @@ jobs:
         PAYLOAD_BRANCH="${{ github.event.client_payload.branch }}"
         PAYLOAD_STATUS="${{ github.event.client_payload.status }}"
 
+        # Remove the organisation name (everything before the first "/")
+        REPO_NAME=$(echo "$PAYLOAD_REPO" | cut -d'/' -f2)
+
         # Determine color based on status
         if [ "$PAYLOAD_STATUS" = "success" ]; then
           COLOR="brightgreen"
