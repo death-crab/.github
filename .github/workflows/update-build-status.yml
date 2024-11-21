@@ -7,7 +7,7 @@ on:
       - update-status
 
 jobs:
-  update-badge:
+  update-build-status:
     runs-on: ubuntu-latest
 
     steps:
@@ -45,7 +45,7 @@ jobs:
         LAST_UPDATED=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
         
         # Load and update JSON
-        jq --arg repo "$PAYLOAD_REPO/$PAYLOAD_BRANCH" \
+        jq --arg repo "$REPO_NAME/$PAYLOAD_BRANCH" \
            --arg branch "$PAYLOAD_BRANCH" \
            --arg status "$PAYLOAD_STATUS" \
            --arg color "$COLOR" \
