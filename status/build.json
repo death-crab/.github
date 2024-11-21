@@ -2,6 +2,7 @@
   "death-crab/deathcrab-base/main": {
     "branch": "main",
     "status": "success",
-    "color": "brightgreen"
+    "color": "brightgreen",
+    "last_updated": "2024-11-21T20:40:00Z"
   }
 }
