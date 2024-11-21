@@ -1,12 +1,7 @@
-[
-  {
-    "repo": "",
-    "branch": "",
-    "status": ""
-  },
-  {
-    "repo": "example-repo",
-    "branch": "main",
-    "status": "success"
-  }
-]
+{
+  "example-repo/main": {
+    "label": "main"
+    "message": "success"
+    "color": "brightgreen"
+}
+
