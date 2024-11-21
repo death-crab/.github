@@ -1,4 +1,5 @@
-name: Handle Repository Dispatch
+name: Update build status
+run-name: Update status for ${{ github.event.client_payload.repository }} on ${{ github.event.client_payload.branch }}
 
 on:
   repository_dispatch:
@@ -11,42 +12,46 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
-    - name: Fetch current status JSON
+    - name: Ensure build.json exists
       run: |
-        if [ ! -f statuses.json ]; then
-          echo "[]" > statuses.json
+        mkdir -p status
+        if [ ! -f status/build.json ]; then
+          echo "{}" > status/build.json
         fi
-      # Save statuses.json in the workspace for later modification
-      id: fetch
 
-    - name: Update status JSON
+    - name: Update build.json
       id: update-json
       run: |
+        # Extract payload values
         PAYLOAD_REPO="${{ github.event.client_payload.repository }}"
         PAYLOAD_BRANCH="${{ github.event.client_payload.branch }}"
         PAYLOAD_STATUS="${{ github.event.client_payload.status }}"
 
-        # Read the existing statuses
-        STATUSES=$(cat statuses.json)
+        # Determine color based on status
+        if [ "$PAYLOAD_STATUS" = "success" ]; then
+          COLOR="brightgreen"
+        elif [ "$PAYLOAD_STATUS" = "fail" ]; then
+          COLOR="red"
+        else
+          COLOR="grey"
+        fi
 
-        # Create a new entry or update the existing one
-        UPDATED=$(echo "$STATUSES" | jq --arg repo "$PAYLOAD_REPO" --arg branch "$PAYLOAD_BRANCH" --arg status "$PAYLOAD_STATUS" \
-          'map(if .repo == $repo and .branch == $branch then .status = $status else . end) | 
-          if map(.repo == $repo and .branch == $branch) | any then . else . + [{repo: $repo, branch: $branch, status: $status}] end')
+        # Load and update JSON
+        jq --arg repo "$PAYLOAD_REPO/$PAYLOAD_BRANCH" \
+           --arg branch "$PAYLOAD_BRANCH" \
+           --arg status "$PAYLOAD_STATUS" \
+           --arg color "$COLOR" \
+           '.[$repo] = {branch: $branch, status: $status, color: $color}' \
+           status/build.json > status/build.json.tmp && mv status/build.json.tmp status/build.json
 
-        # Write the updated JSON back
-        echo "$UPDATED" > statuses.json
-
-    - name: Commit and push updated JSON
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Commit and push updated build.json
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-
-        git add statuses.json
-        git commit -m "Update build statuses [skip ci]"
+        git add status/build.json
+        git commit -m "Update build status for ${{ github.event.client_payload.repository }}/main [skip ci]"
         git push
-
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
