@@ -1,5 +1,6 @@
 {
   "deathcrab-base/main": {
+    "schemaVersion": 1,
     "branch": "main",
     "status": "success",
     "color": "grey",
