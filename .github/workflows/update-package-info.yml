@@ -30,6 +30,9 @@ jobs:
 
     - name: Push Package Info to Public Repo
       run: |
+        git config --global user.name "GitHub Actions Bot"
+        git config --global user.email "actions@github.com"
+        
         cd status
         git add ${{ env.package-file }}
         git commit -m "${{ env.commit-message }}"
