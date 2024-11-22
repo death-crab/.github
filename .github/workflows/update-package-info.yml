@@ -35,7 +35,8 @@ jobs:
         dotnet package search --source death-crab --configfile nuget.config --verbosity detailed --format json > ${{ env.package-file }}
 
     - name: Push Package Info to Public Repo
-      run: |       
+      run: |
+        cd status
         git add ${{ env.package-file }}
-        git commit -m ${{ env.commit-message }}
+        git commit -m "${{ env.commit-message }}"
         git push
