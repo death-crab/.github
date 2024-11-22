@@ -15,20 +15,13 @@ jobs:
       package-file: packages.json
       commit-message: Update package info [bot]
 
-    steps:
-    - name: Get app token
-      uses: actions/create-github-app-token@v1.11.0
-      id: get-app-token
-      with:
-        app-id: ${{ vars.PACKAGE_READER_APP_ID }}
-        private-key: ${{ secrets.PACKAGE_READER_APP_KEY }}
-        owner: ${{ github.repository_owner }}
-
     - name: Checkout Code
       uses: actions/checkout@v4
 
     - name: Generate Package Info
       env:
+        # Note that GitHub Apps cannot access packages. This has to be performed via the GITHUB_TOKEN or a user PAT.
+        # https://github.com/orgs/community/discussions/24636#discussioncomment-11352345
         NuGetPackageSourceCredentials_death-crab: Username=github;Password=${{ secrets.GITHUB_TOKEN }}
       run: |
         cd status
