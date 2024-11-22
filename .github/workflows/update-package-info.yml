@@ -29,7 +29,7 @@ jobs:
 
     - name: Generate Package Info
       env:
-        NuGetPackageSourceCredentials_death-crab: Username=github;Password=${{ steps.get-app-token.outputs.token }}
+        NuGetPackageSourceCredentials_death-crab: Username=github;Password=${{ secrets.GITHUB_TOKEN }}
       run: |
         cd status
         dotnet package search --source death-crab --configfile nuget.config --verbosity detailed --format json > ${{ env.package-file }}
