@@ -5,26 +5,39 @@ name: CI
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: self-hosted
-    
     env:
-      NuGetPackageSourceCredentials_death-crab: Username=github;Password=${{ secrets.GITHUB_TOKEN }}
-    
+      package-file: status/packages.json
+      commit-message: Update pacakge info [bot]
+
     steps:
+    - name: Get app token
+      uses: actions/create-github-app-token@v1.11.0
+      id: get-app-token
+      with:
+        app-id: ${{ vars.PACKAGE_READER_APP_ID }}
+        private-key: ${{ secrets.PACKAGE_READER_APP_KEY }}
+        owner: ${{ github.repository_owner }}
+
     - name: Checkout Code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Generate Package Info
+      env:
+        NuGetPackageSourceCredentials_death-crab: Username=github;Password=${{ steps.get-app-token.token }}
       run: |
-        dotnet package search --source https://nuget.pkg.github.com/death-crab/index.json --format json > packages/package-info.json
+        dotnet package search --source death-crab --format json > packages/package-info.json
 
     - name: Push Package Info to Public Repo
       run: |
-        git add packages/package-info.json
-        git commit -m "Update package info [skip ci]"
+        git_username=${{ steps.get-app-token.outputs.app-slug }}[bot]
+        git config user.name $git_username
+        git config user.email $git_username@users.noreply.github.com
+        
+        git add ${{ env.package-file }}
+        git commit -m ${{ env.commit-message }}
         git push
