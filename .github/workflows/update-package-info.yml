@@ -35,11 +35,7 @@ jobs:
         dotnet package search --source death-crab --configfile nuget.config --verbosity detailed --format json > ${{ env.package-file }}
 
     - name: Push Package Info to Public Repo
-      run: |
-        git_username=${{ steps.get-app-token.outputs.app-slug }}[bot]
-        git config user.name $git_username
-        git config user.email $git_username@users.noreply.github.com
-        
+      run: |       
         git add ${{ env.package-file }}
         git commit -m ${{ env.commit-message }}
         git push
