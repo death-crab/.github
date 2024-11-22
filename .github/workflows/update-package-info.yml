@@ -1,6 +1,7 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Update package information
+run-name: Update package information
 
 on:
   push:
@@ -31,7 +32,7 @@ jobs:
         NuGetPackageSourceCredentials_death-crab: Username=github;Password=${{ steps.get-app-token.outputs.token }}
       run: |
         cd status
-        dotnet package search --source death-crab --format json > ${{ env.package-file }}
+        dotnet package search --source death-crab --configfile nuget.config --verbosity detailed --format json > ${{ env.package-file }}
 
     - name: Push Package Info to Public Repo
       run: |
