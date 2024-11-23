@@ -11,5 +11,11 @@
     "status": "success",
     "color": "brightgreen",
     "last_updated": "2024-11-23T16:05:57Z"
+  },
+  "deathcrab-aspnet/": {
+    "branch": "",
+    "status": "success",
+    "color": "brightgreen",
+    "last_updated": "2024-11-23T16:38:33Z"
   }
 }
