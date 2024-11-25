@@ -8,6 +8,9 @@
   "deathcrab-aspnet": {
     "build": {
       "main": "success"
+    },
+    "package-shared-pull": {
+      "main": "success"
     }
   }
 }
