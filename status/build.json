@@ -42,6 +42,9 @@
   "deathcrab-model": {
     "build": {
       "main": "success"
+    },
+    "subtree-pull": {
+      "main": "success"
     }
   },
   "deathcrab-package-shared": {
