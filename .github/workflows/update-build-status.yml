@@ -9,21 +9,22 @@ on:
 jobs:
   update-build-status:
     runs-on: ubuntu-latest
-
+    env:
+      package-file: packages.json
+      
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Ensure build.json exists
+    - name: Update build status file
       run: |
         mkdir -p status
-        if [ ! -f status/build.json ]; then
-          echo "{}" > status/build.json
+        cd status
+        
+        if [ ! -f build.json ]; then
+          echo "{}" > build.json
         fi
-
-    - name: Update build.json
-      id: update-json
-      run: |
+        
         # Remove the organisation name (everything before the first "/")
         REPO_NAME=$(echo "${{ github.event.client_payload.repository }}" | cut -d'/' -f2)
        
@@ -32,20 +33,35 @@ jobs:
            --arg build "${{ github.event.client_payload.build }}" \
            --arg status "${{ github.event.client_payload.status }}" \
            '.[$repo][$build][$branch] = $status' \
-           status/build.json > status/build.json.tmp && mv status/build.json.tmp status/build.json
+           build.json > build.json.tmp && mv build.json.tmp build.json
 
-    - name: Commit and push updated build.json
+    - name: Generate package info file
+      env:
+        # Note that GitHub Apps cannot access packages. This has to be performed via the GITHUB_TOKEN or a user PAT.
+        # https://github.com/orgs/community/discussions/24636#discussioncomment-11352345
+        NuGetPackageSourceCredentials_death-crab: Username=github;Password=${{ secrets.GITHUB_TOKEN }}
+      run: |
+        dotnet package search --source death-crab --configfile nuget.config --verbosity detailed --format json > ${{ env.package-file }}
+
+    - if: always()
+      name: Update my own status (we cannot dispatch as this could cause a recursive loop)
+      run: |
+        REPO_NAME=$(echo "${{ github.repository }}" | cut -d'/' -f2)
+        jq --arg repo "$REPO_NAME" \
+           --arg branch "main" \
+           --arg build "${{ github.job }}" \
+           --arg status "${{ job.status }}" \
+           '.[$repo][$build][$branch] = $status' \
+           build.json > build.json.tmp && mv build.json.tmp build.json
+      
+    - if: always()
+      name: Commit and push
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-        git add status/build.json
-        git commit -m "Update build status for ${{ github.event.client_payload.repository }}/main [bot]"
-        git push
+        git add build.json
+        git add ${{ env.package-file }}
+        commit_message="Update build status for repository ${{ github.event.client_payload.repository }} [bot]"
+        git diff --cached --quiet || (git commit -m "${{ env.commit-message }}" && git push)
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Publish build status
-      if: always()
-      uses: death-crab/actions/update-status@main
-      with:
-        private_key: ${{ secrets.STATUS_UPDATE_APP_KEY }}
