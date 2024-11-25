@@ -43,5 +43,10 @@
     "build": {
       "main": "success"
     }
+  },
+  "deathcrab-package-shared": {
+    "notify-downstream-repos": {
+      "main": "success"
+    }
   }
 }
