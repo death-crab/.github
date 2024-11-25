@@ -22,5 +22,10 @@
     "subtree-pull": {
       "main": "failure"
     }
+  },
+  "deathcrab-data": {
+    "build": {
+      "main": "success"
+    }
   }
 }
