@@ -37,3 +37,9 @@ jobs:
         git add ${{ env.package-file }}
         git commit -m "${{ env.commit-message }}"
         git push
+
+    - name: Publish build status
+      if: always()
+      uses: death-crab/actions/update-status@main
+      with:
+        private_key: ${{ secrets.STATUS_UPDATE_APP_KEY }}
