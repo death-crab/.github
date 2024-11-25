@@ -41,6 +41,7 @@ jobs:
         # https://github.com/orgs/community/discussions/24636#discussioncomment-11352345
         NuGetPackageSourceCredentials_death-crab: Username=github;Password=${{ secrets.GITHUB_TOKEN }}
       run: |
+        cd status
         dotnet package search --source death-crab --configfile nuget.config --verbosity detailed --format json > ${{ env.package-file }}
 
     - if: always()
