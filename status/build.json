@@ -38,5 +38,10 @@
     "subtree-pull": {
       "main": "success"
     }
+  },
+  "deathcrab-model": {
+    "build": {
+      "main": "success"
+    }
   }
 }
