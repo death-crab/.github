@@ -62,5 +62,10 @@
     "subtree-pull": {
       "main": "success"
     }
+  },
+  ".github": {
+    "update-build-status": {
+      "main": "success"
+    }
   }
 }
