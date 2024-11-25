@@ -24,31 +24,13 @@ jobs:
     - name: Update build.json
       id: update-json
       run: |
-        # Extract payload values
-        PAYLOAD_REPO="${{ github.event.client_payload.repository }}"
-        PAYLOAD_BRANCH="${{ github.event.client_payload.branch }}"
-        PAYLOAD_STATUS="${{ github.event.client_payload.status }}"
-
         # Remove the organisation name (everything before the first "/")
-        REPO_NAME=$(echo "$PAYLOAD_REPO" | cut -d'/' -f2)
-
-        # Determine color based on status
-        if [ "$PAYLOAD_STATUS" = "success" ]; then
-          COLOR="brightgreen"
-        elif [ "$PAYLOAD_STATUS" = "fail" ]; then
-          COLOR="red"
-        else
-          COLOR="grey"
-        fi
-        
-        # Get current timestamp in ISO 8601 format
-        LAST_UPDATED=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-        
-        # Load and update JSON
+        REPO_NAME=$(echo "${{ github.event.client_payload.repository }}" | cut -d'/' -f2)
+       
         jq --arg repo "$REPO_NAME" \
-           --arg branch "$PAYLOAD_BRANCH" \
-           --arg status "$PAYLOAD_STATUS" \
-           '.[$repo][$branch]: $status' \
+           --arg branch "${{ github.event.client_payload.branch }}" \
+           --arg status "${{ github.event.client_payload.status }}" \
+           '.[$repo][$branch] = $status' \
            status/build.json > status/build.json.tmp && mv status/build.json.tmp status/build.json
 
     - name: Commit and push updated build.json
