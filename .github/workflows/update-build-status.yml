@@ -65,6 +65,6 @@ jobs:
         git add build.json
         git add ${{ env.package-file }}        
         commit_message="Update build status for repository ${{ github.event.client_payload.repository }} [bot]"
-        git diff --cached --quiet || (git commit -m "${{ env.commit-message }}" && git push)
+        git diff --cached --quiet || (git commit -m $commit-message && git push)
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
