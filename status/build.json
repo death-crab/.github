@@ -6,5 +6,10 @@
     "package-shared-pull": {
       "main": "success"
     }
+  },
+  "deathcrab-aspnet-openapi": {
+    "build": {
+      "main": "success"
+    }
   }
 }
