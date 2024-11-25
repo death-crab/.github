@@ -5,6 +5,9 @@
     },
     "package-shared-pull": {
       "main": "success"
+    },
+    "subtree-pull": {
+      "main": "success"
     }
   },
   "deathcrab-aspnet-openapi": {
