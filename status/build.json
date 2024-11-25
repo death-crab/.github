@@ -10,6 +10,9 @@
   "deathcrab-aspnet-openapi": {
     "build": {
       "main": "success"
+    },
+    "subtree-pull": {
+      "main": "success"
     }
   }
 }
