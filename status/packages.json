@@ -69,17 +69,15 @@
         },
         {
           "id": "DeathCrab.AspNet",
-          "latestVersion": "2.0.21",
+          "latestVersion": "2.0.46",
           "totalDownloads": 3,
-          "description": "A framework for AOT-compiled MinimalAPI ASP.NET applications",
-          "projectUrl": "https://github.com/death-crab/deathcrab-aspnet/blob/release/src/DeathCrab.AspNet.Pack"
+          "description": "A framework for AOT-compiled MinimalAPI ASP.NET applications"
         },
         {
           "id": "DeathCrab.AspNet.Protobuf",
-          "latestVersion": "2.0.21",
+          "latestVersion": "2.0.46",
           "totalDownloads": 3,
-          "description": "Additional support for Google Protobuf based communication.",
-          "projectUrl": "https://github.com/death-crab/deathcrab-aspnet/blob/release/src/DeathCrab.AspNet.Protobuf"
+          "description": "Additional support for Google Protobuf based communication."
         },
         {
           "id": "DeathCrab.Base",
