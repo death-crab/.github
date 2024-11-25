@@ -34,6 +34,9 @@
   "deathcrab-dacpac-converter": {
     "build": {
       "main": "success"
+    },
+    "subtree-pull": {
+      "main": "success"
     }
   }
 }
