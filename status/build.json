@@ -1,5 +1,8 @@
 {
   "fudge": {
-    "main": "success"
+    "main": "success",
+    "fudge": {
+      "main": "success"
+    }
   }
 }
