@@ -43,3 +43,9 @@ jobs:
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Publish build status
+      if: always()
+      uses: death-crab/actions/update-status@main
+      with:
+        private_key: ${{ secrets.STATUS_UPDATE_APP_KEY }}
