@@ -26,6 +26,9 @@
   "deathcrab-data": {
     "build": {
       "main": "success"
+    },
+    "subtree-pull": {
+      "main": "success"
     }
   },
   "deathcrab-dacpac-converter": {
