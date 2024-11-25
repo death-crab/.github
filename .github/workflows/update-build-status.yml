@@ -29,8 +29,9 @@ jobs:
        
         jq --arg repo "$REPO_NAME" \
            --arg branch "${{ github.event.client_payload.branch }}" \
+           --arg build "${{ github.event.client_payload.build }}" \
            --arg status "${{ github.event.client_payload.status }}" \
-           '.[$repo][$branch] = $status' \
+           '.[$repo][$build][$branch] = $status' \
            status/build.json > status/build.json.tmp && mv status/build.json.tmp status/build.json
 
     - name: Commit and push updated build.json
