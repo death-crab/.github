@@ -14,5 +14,10 @@
     "subtree-pull": {
       "main": "success"
     }
+  },
+  "deathcrab-base": {
+    "build": {
+      "main": "success"
+    }
   }
 }
