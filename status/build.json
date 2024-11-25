@@ -4,5 +4,10 @@
     "fudge": {
       "main": "success"
     }
+  },
+  "deathcrab-aspnet": {
+    "build": {
+      "main": "success"
+    }
   }
 }
