@@ -50,6 +50,9 @@
   "deathcrab-package-shared": {
     "notify-downstream-repos": {
       "main": "success"
+    },
+    "notify-downstream": {
+      "main": "success"
     }
   }
 }
