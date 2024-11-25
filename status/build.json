@@ -1,7 +1,7 @@
 {
   "deathcrab-aspnet": {
     "build": {
-      "main": "failure"
+      "main": "success"
     },
     "package-shared-pull": {
       "main": "success"
