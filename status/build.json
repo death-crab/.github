@@ -3,9 +3,6 @@
     "build": {
       "main": "success"
     },
-    "package-shared-pull": {
-      "main": "success"
-    },
     "subtree-pull": {
       "main": "success"
     }
