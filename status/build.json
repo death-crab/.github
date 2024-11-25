@@ -23,5 +23,11 @@
     "status": "",
     "color": "grey",
     "last_updated": "2024-11-24T12:54:42Z"
+  },
+  "fudge/main": {
+    "branch": "main",
+    "status": "success",
+    "color": "brightgreen",
+    "last_updated": "2024-11-25T11:12:35Z"
   }
 }
