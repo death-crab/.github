@@ -67,5 +67,10 @@
     "update-build-status": {
       "main": "success"
     }
+  },
+  "rigpimp-api": {
+    "build": {
+      "main": "failure"
+    }
   }
 }
