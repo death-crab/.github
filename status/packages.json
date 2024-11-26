@@ -6,12 +6,6 @@
       "sourceName": "death-crab",
       "packages": [
         {
-          "id": "Rigpimp.Db.Schema",
-          "latestVersion": "1.0.6",
-          "totalDownloads": 1,
-          "description": "The RigPimp\u2122 database schema used for generating source code."
-        },
-        {
           "id": "DeathCrab.Tools.DacpacConverter",
           "latestVersion": "2.0.28",
           "totalDownloads": 4,
