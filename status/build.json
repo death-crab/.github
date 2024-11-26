@@ -76,6 +76,9 @@
   "rigpimp-db": {
     "build-and-publish": {
       "main": "success"
+    },
+    "database": {
+      "main": "success"
     }
   }
 }
