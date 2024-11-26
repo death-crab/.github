@@ -52,7 +52,7 @@
       "main": "success"
     },
     "notify-downstream": {
-      "main": "failure"
+      "main": "success"
     }
   },
   "deathcrab-source-generation": {
