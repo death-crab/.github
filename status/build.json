@@ -78,7 +78,8 @@
       "main": "success"
     },
     "database": {
-      "main": "success"
+      "main": "success",
+      "release": "success"
     }
   }
 }
