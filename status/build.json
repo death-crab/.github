@@ -41,7 +41,7 @@
   },
   "deathcrab-model": {
     "build": {
-      "main": "failure"
+      "main": "success"
     },
     "subtree-pull": {
       "main": "success"
