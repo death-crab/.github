@@ -20,7 +20,7 @@
       "main": "success"
     },
     "subtree-pull": {
-      "main": "failure"
+      "main": "success"
     }
   },
   "deathcrab-data": {
