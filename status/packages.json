@@ -28,7 +28,7 @@
         {
           "id": "DeathCrab.SourceGeneration",
           "latestVersion": "3.0.35",
-          "totalDownloads": 6,
+          "totalDownloads": 7,
           "description": "A framework for Roslyn analysers which generate source code."
         },
         {
