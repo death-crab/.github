@@ -14,14 +14,14 @@
         {
           "id": "DeathCrab.Tools.DacpacConverter",
           "latestVersion": "2.0.28",
-          "totalDownloads": 4,
+          "totalDownloads": 5,
           "description": "Converts a DACPAC file to a proprietary schema format for use with source generators.",
           "projectUrl": "https://github.com/death-crab/deathcrab-dacpac-converter/blob/release/src/DeathCrab.Tools.DacpacConverter"
         },
         {
           "id": "DeathCrab.Model.Generators",
           "latestVersion": "6.0.7",
-          "totalDownloads": 5,
+          "totalDownloads": 6,
           "description": "Source code generators that dynamically write data model code driven by a database schema."
         },
         {
@@ -33,7 +33,7 @@
         {
           "id": "DeathCrab.Data.Sql",
           "latestVersion": "2.0.6",
-          "totalDownloads": 5,
+          "totalDownloads": 6,
           "description": "Provides AOT-compatible SQL data logic for use with source generators.",
           "projectUrl": "https://github.com/death-crab/deathcrab-data/blob/release/src/DeathCrab.Data.Sql"
         },
