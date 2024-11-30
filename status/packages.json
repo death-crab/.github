@@ -20,7 +20,7 @@
         },
         {
           "id": "DeathCrab.Model.Generators",
-          "latestVersion": "6.0.5",
+          "latestVersion": "6.0.7",
           "totalDownloads": 5,
           "description": "Source code generators that dynamically write data model code driven by a database schema."
         },
