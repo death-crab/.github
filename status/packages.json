@@ -8,7 +8,7 @@
         {
           "id": "RigPimp.Db.Schema",
           "latestVersion": "1.0.26",
-          "totalDownloads": 0,
+          "totalDownloads": 1,
           "description": "The RigPimp\u2122 database schema used for generating source code."
         },
         {
@@ -21,7 +21,7 @@
         {
           "id": "DeathCrab.Model.Generators",
           "latestVersion": "6.0.7",
-          "totalDownloads": 6,
+          "totalDownloads": 7,
           "description": "Source code generators that dynamically write data model code driven by a database schema."
         },
         {
@@ -32,10 +32,9 @@
         },
         {
           "id": "DeathCrab.Data.Sql",
-          "latestVersion": "2.0.6",
+          "latestVersion": "2.0.16",
           "totalDownloads": 6,
-          "description": "Provides AOT-compatible SQL data logic for use with source generators.",
-          "projectUrl": "https://github.com/death-crab/deathcrab-data/blob/release/src/DeathCrab.Data.Sql"
+          "description": "Provides AOT-compatible SQL data logic for use with source generators."
         },
         {
           "id": "DeathCrab.AspNet.OpenApi.Swashbuckle",
