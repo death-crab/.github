@@ -21,7 +21,7 @@
         {
           "id": "DeathCrab.Model.Generators",
           "latestVersion": "6.0.7",
-          "totalDownloads": 8,
+          "totalDownloads": 9,
           "description": "Source code generators that dynamically write data model code driven by a database schema."
         },
         {
@@ -33,7 +33,7 @@
         {
           "id": "DeathCrab.Data.Sql",
           "latestVersion": "2.0.16",
-          "totalDownloads": 8,
+          "totalDownloads": 9,
           "description": "Provides AOT-compatible SQL data logic for use with source generators."
         },
         {
@@ -46,14 +46,14 @@
         {
           "id": "DeathCrab.AspNet.OpenApi.Schema",
           "latestVersion": "3.0.17",
-          "totalDownloads": 6,
+          "totalDownloads": 7,
           "description": "Provides support for AOT-compliant OpenAPI schema generation.",
           "projectUrl": "https://github.com/death-crab/deathcrab-aspnet-openapi/blob/release/src/DeathCrab.AspNet.OpenApi.Schema"
         },
         {
           "id": "DeathCrab.AspNet.OpenApi.Operations",
           "latestVersion": "3.0.17",
-          "totalDownloads": 4,
+          "totalDownloads": 5,
           "description": "Provides support for AOT-compliant OpenAPI operations specificiation generation.",
           "projectUrl": "https://github.com/death-crab/deathcrab-aspnet-openapi/blob/release/src/DeathCrab.AspNet.OpenApi.Operations"
         },
