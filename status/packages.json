@@ -8,7 +8,7 @@
         {
           "id": "RigPimp.Db.Schema",
           "latestVersion": "1.0.26",
-          "totalDownloads": 2,
+          "totalDownloads": 3,
           "description": "The RigPimp\u2122 database schema used for generating source code."
         },
         {
@@ -39,7 +39,7 @@
         {
           "id": "DeathCrab.AspNet.OpenApi.Swashbuckle",
           "latestVersion": "3.0.17",
-          "totalDownloads": 4,
+          "totalDownloads": 5,
           "description": "OpenAPI schema integration support for use with Swashbuckle.",
           "projectUrl": "https://github.com/death-crab/deathcrab-aspnet-openapi/blob/release/src/DeathCrab.AspNet.OpenApi.Swashbuckle"
         },
@@ -60,26 +60,26 @@
         {
           "id": "DeathCrab.AspNet.OpenApi",
           "latestVersion": "3.0.17",
-          "totalDownloads": 4,
+          "totalDownloads": 5,
           "description": "Provides support for AOT-compliant OpenAPI operations specificiation generation.",
           "projectUrl": "https://github.com/death-crab/deathcrab-aspnet-openapi/blob/release/src/DeathCrab.AspNet.OpenApi"
         },
         {
           "id": "DeathCrab.AspNet",
           "latestVersion": "2.0.46",
-          "totalDownloads": 3,
+          "totalDownloads": 4,
           "description": "A framework for AOT-compiled MinimalAPI ASP.NET applications"
         },
         {
           "id": "DeathCrab.AspNet.Protobuf",
           "latestVersion": "2.0.46",
-          "totalDownloads": 3,
+          "totalDownloads": 4,
           "description": "Additional support for Google Protobuf based communication."
         },
         {
           "id": "DeathCrab.Base",
           "latestVersion": "2.0.65",
-          "totalDownloads": 14,
+          "totalDownloads": 16,
           "description": "Provides common base functionality."
         }
       ]
