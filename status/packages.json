@@ -8,7 +8,7 @@
         {
           "id": "RigPimp.Db.Schema",
           "latestVersion": "1.0.26",
-          "totalDownloads": 6,
+          "totalDownloads": 8,
           "description": "The RigPimp\u2122 database schema used for generating source code."
         },
         {
@@ -21,7 +21,7 @@
         {
           "id": "DeathCrab.Model.Generators",
           "latestVersion": "6.0.7",
-          "totalDownloads": 12,
+          "totalDownloads": 14,
           "description": "Source code generators that dynamically write data model code driven by a database schema."
         },
         {
@@ -33,7 +33,7 @@
         {
           "id": "DeathCrab.Data.Sql",
           "latestVersion": "2.0.16",
-          "totalDownloads": 12,
+          "totalDownloads": 14,
           "description": "Provides AOT-compatible SQL data logic for use with source generators."
         },
         {
@@ -46,40 +46,40 @@
         {
           "id": "DeathCrab.AspNet.OpenApi.Schema",
           "latestVersion": "3.0.17",
-          "totalDownloads": 12,
+          "totalDownloads": 14,
           "description": "Provides support for AOT-compliant OpenAPI schema generation.",
           "projectUrl": "https://github.com/death-crab/deathcrab-aspnet-openapi/blob/release/src/DeathCrab.AspNet.OpenApi.Schema"
         },
         {
           "id": "DeathCrab.AspNet.OpenApi.Operations",
           "latestVersion": "3.0.17",
-          "totalDownloads": 8,
+          "totalDownloads": 10,
           "description": "Provides support for AOT-compliant OpenAPI operations specificiation generation.",
           "projectUrl": "https://github.com/death-crab/deathcrab-aspnet-openapi/blob/release/src/DeathCrab.AspNet.OpenApi.Operations"
         },
         {
           "id": "DeathCrab.AspNet.OpenApi",
           "latestVersion": "3.0.17",
-          "totalDownloads": 8,
+          "totalDownloads": 10,
           "description": "Provides support for AOT-compliant OpenAPI operations specificiation generation.",
           "projectUrl": "https://github.com/death-crab/deathcrab-aspnet-openapi/blob/release/src/DeathCrab.AspNet.OpenApi"
         },
         {
           "id": "DeathCrab.AspNet",
           "latestVersion": "2.0.46",
-          "totalDownloads": 7,
+          "totalDownloads": 9,
           "description": "A framework for AOT-compiled MinimalAPI ASP.NET applications"
         },
         {
           "id": "DeathCrab.AspNet.Protobuf",
           "latestVersion": "2.0.46",
-          "totalDownloads": 7,
+          "totalDownloads": 9,
           "description": "Additional support for Google Protobuf based communication."
         },
         {
           "id": "DeathCrab.Base",
           "latestVersion": "2.0.65",
-          "totalDownloads": 22,
+          "totalDownloads": 26,
           "description": "Provides common base functionality."
         }
       ]
