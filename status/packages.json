@@ -33,7 +33,7 @@
         {
           "id": "DeathCrab.Data.Sql",
           "latestVersion": "2.0.16",
-          "totalDownloads": 59,
+          "totalDownloads": 60,
           "description": "Provides AOT-compatible SQL data logic for use with source generators."
         },
         {
