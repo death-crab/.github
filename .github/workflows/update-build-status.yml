@@ -44,7 +44,7 @@ jobs:
       run: |
         cd status
         # dotnet package search --source death-crab --configfile nuget.config --verbosity detailed --format json > ${{ env.package-file }}
-        get-containers.sh > ${{ env.package-file }}
+        ./get-containers.sh > ${{ env.package-file }}
 
     - if: always()
       name: Update my own status (we cannot dispatch as this could cause a recursive loop)
