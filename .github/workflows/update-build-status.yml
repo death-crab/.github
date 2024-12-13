@@ -39,10 +39,12 @@ jobs:
       env:
         # Note that GitHub Apps cannot access packages. This has to be performed via the GITHUB_TOKEN or a user PAT.
         # https://github.com/orgs/community/discussions/24636#discussioncomment-11352345
+        GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NuGetPackageSourceCredentials_death-crab: Username=github;Password=${{ secrets.GITHUB_TOKEN }}
       run: |
         cd status
-        dotnet package search --source death-crab --configfile nuget.config --verbosity detailed --format json > ${{ env.package-file }}
+        # dotnet package search --source death-crab --configfile nuget.config --verbosity detailed --format json > ${{ env.package-file }}
+        get-containers.sh > ${{ env.package-file }}
 
     - if: always()
       name: Update my own status (we cannot dispatch as this could cause a recursive loop)
