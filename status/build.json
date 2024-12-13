@@ -69,7 +69,7 @@
   },
   ".github": {
     "update-build-status": {
-      "main": "success"
+      "main": "failure"
     }
   },
   "rigpimp-api": {
