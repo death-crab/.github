@@ -10,19 +10,28 @@ jobs:
   update-build-status:
     runs-on: ubuntu-latest
     env:
+      status-path: status
       package-file: packages.json
+      build-status-file: build.json
       
     steps:
-    - name: Checkout repository
+    - name: Checkout SCM
       uses: actions/checkout@v4
 
-    - name: Update build status file
+    - name: Setup SCM
+      shell: bash
       run: |
-        mkdir -p status
-        cd status
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+
+    - name: Update build status file
+      shell: bash
+      run: |
+        mkdir -p ${{ env.status-path }}
+        cd ${{ env.status-path }}
         
-        if [ ! -f build.json ]; then
-          echo "{}" > build.json
+        if [ ! -f ${{ env.build-status-file }} ]; then
+          echo "{}" > ${{ env.build-status-file }} 
         fi
         
         # Remove the organisation name (everything before the first "/")
@@ -33,42 +42,35 @@ jobs:
            --arg build "${{ github.event.client_payload.build }}" \
            --arg status "${{ github.event.client_payload.status }}" \
            '.[$repo][$build][$branch] = $status' \
-           build.json > build.json.tmp && mv build.json.tmp build.json
+           ${{ env.build-status-file }} > ${{ env.build-status-file }}.tmp && mv ${{ env.build-status-file }}.tmp ${{ env.build-status-file }} 
 
     - name: Generate package info file
       env:
-        # Note that GitHub Apps cannot access packages. This has to be performed via the GITHUB_TOKEN or a user PAT.
-        # https://github.com/orgs/community/discussions/24636#discussioncomment-11352345
-        GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        NuGetPackageSourceCredentials_death-crab: Username=github;Password=${{ secrets.GITHUB_TOKEN }}
+        # Note that packages and containers endpoints in the GitHub API can ONLY be read using a classic PAT
+        # https://docs.github.com/en/rest/packages/packages?apiVersion=2022-11-28#about-github-packages
+        GITHUB_API_TOKEN: ${{ secrets.PACKAGE_READ_PAT }}
       run: |
-        cd status
-        # dotnet package search --source death-crab --configfile nuget.config --verbosity detailed --format json > ${{ env.package-file }}
+        cd ${{ env.status-path }}
         chmod +x ./get-containers.sh
         ./get-containers.sh > ${{ env.package-file }}
-        
+        git add ${{ env.package-file }}
 
     - if: always()
-      name: Update my own status (we cannot dispatch as this could cause a recursive loop)
+      name: Update my own status
       run: |
-        cd status
+        cd ${{ env.status-path }}
         REPO_NAME=$(echo "${{ github.repository }}" | cut -d'/' -f2)
         jq --arg repo "$REPO_NAME" \
            --arg branch "main" \
            --arg build "${{ github.job }}" \
            --arg status "${{ job.status }}" \
            '.[$repo][$build][$branch] = $status' \
-           build.json > build.json.tmp && mv build.json.tmp build.json
+           ${{ env.build-status-file }} > ${{ env.build-status-file }}.tmp && mv ${{ env.build-status-file }}.tmp ${{ env.build-status-file }} 
+        git add build.json
       
     - if: always()
-      name: Commit and push
+      name: Push to SCM
       run: |
-        cd status
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
-        git add build.json
-        git add ${{ env.package-file }}        
+        cd ${{ env.status-path }}       
         commit_message="Update build status for repository ${{ github.event.client_payload.repository }} [bot]"
-        git diff --cached --quiet || (git commit -m $commit-message && git push)
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        git diff --cached --quiet || (git commit -m $commit_message && git push)
