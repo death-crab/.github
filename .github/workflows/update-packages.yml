@@ -22,7 +22,7 @@ jobs:
       uses: actions/create-github-app-token@v1.11.0
       id: get-package-read-token
       with:
-        app-id: ${{ env.PACKAGE_READER_APP_ID }}
+        app-id: ${{ vars.PACKAGE_READER_APP_ID }}
         private-key: ${{ secrets.PACKAGE_READER_APP_KEY }}
         owner: ${{ github.repository_owner }}
 
