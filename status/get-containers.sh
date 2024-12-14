@@ -6,6 +6,7 @@ set -o pipefail
 
 # Use the environment variable GITHUB_API_TOKEN for the token
 token="${GITHUB_API_TOKEN:-}"
+echo "Token length: ${#GITHUB_API_TOKEN}"
 ORG_NAME="death-crab"
 BASE_URL="https://api.github.com/orgs/$ORG_NAME"
 
