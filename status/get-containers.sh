@@ -6,7 +6,6 @@ set -o pipefail
 
 # Use the environment variable GITHUB_API_TOKEN for the token
 token="${GITHUB_API_TOKEN:-}"
-echo "Token length: ${#GITHUB_API_TOKEN}"
 ORG_NAME="death-crab"
 BASE_URL="https://api.github.com/orgs/$ORG_NAME"
 
@@ -30,8 +29,12 @@ api_call() {
     if [[ "$http_code" -ge 200 && "$http_code" -lt 300 ]]; then
         echo "$response_body"
     else
-        echo "Error: HTTP $http_code - $(echo "$response_body" | jq -r '.message // "Unknown error')" >&2
-        echo "Full Response: $response_body" >&2 # Add this line for debugging
+        if echo "$response_body" | jq -e . >/dev/null 2>&1; then
+            local error_message=$(echo "$response_body" | jq -r '.message // "Unknown error"')
+        else
+            local error_message="Invalid JSON response"
+        fi
+        echo "Error: HTTP $http_code - $error_message" >&2
         exit 1
     fi
 }
