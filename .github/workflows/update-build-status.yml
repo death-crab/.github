@@ -73,4 +73,4 @@ jobs:
       name: Push to SCM
       run: |
         cd ${{ env.status-path }}
-        git diff --cached --quiet || (git commit -m ${{ env.commit-message }} && git push)
+        git diff --cached --quiet || (git commit -m "${{ env.commit-message }}" && git push)
