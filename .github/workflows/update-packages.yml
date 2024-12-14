@@ -28,7 +28,7 @@ jobs:
 
     - name: Generate package info file
       env:
-        GITHUB_API_TOKEN: ${{ steps.get-app-token.outputs.token }}        
+        GITHUB_API_TOKEN: ${{ steps.get-package-read-token.outputs.token }}        
       run: |
         cd status
         chmod +x ./get-containers.sh
