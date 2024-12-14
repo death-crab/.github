@@ -1,63 +1,116 @@
 #!/bin/bash
 
-TOKEN="${GITHUB_API_TOKEN:-}"
+# Fail on any error and propagate errors through pipelines
+set -e
+set -o pipefail
+
+# Use the environment variable GITHUB_API_TOKEN for the token
+token="${GITHUB_API_TOKEN:-}"
 ORG_NAME="death-crab"
+BASE_URL="https://api.github.com/orgs/$ORG_NAME"
 
-# Initialise the output structure
-output='{"searchResult":[{"sourceName":"'"$ORG_NAME"'","packages":[],"containers":[]}]}'
+if [[ -z "$token" ]]; then
+    echo "Error: GITHUB_API_TOKEN environment variable is not set" >&2
+    exit 1
+fi
 
-# Step 1: Get all NuGet packages
-packages=$(curl -s -H "Authorization: Bearer $TOKEN" \
-    -H "Accept: application/vnd.github+json" \
-    "https://api.github.com/orgs/$ORG_NAME/packages?package_type=nuget" | jq -r '.[].name')
+# Function: api_call
+api_call() {
+    local path="$1"
+    local response http_code response_body
 
-# Step 2: Process NuGet packages
-for package in $packages; do
-    versions=$(curl -s -H "Authorization: Bearer $TOKEN" \
+    response=$(curl -s -w "\n%{http_code}" -H "Authorization: Bearer $token" \
         -H "Accept: application/vnd.github+json" \
-        "https://api.github.com/orgs/$ORG_NAME/packages/nuget/$package/versions" | jq -r '.[].name')
+        "$BASE_URL/$path")
+    
+    http_code=$(echo "$response" | tail -n1)
+    response_body=$(echo "$response" | head -n -1)
 
-    latest_release=""
-    latest_prerelease=""
-    latest_dev=""
+    if [[ "$http_code" -ge 200 && "$http_code" -lt 300 ]]; then
+        echo "$response_body"
+    else
+        if echo "$response_body" | jq -e . >/dev/null 2>&1; then
+            local error_message=$(echo "$response_body" | jq -r '.message // "Unknown error"')
+        else
+            local error_message="Invalid JSON response"
+        fi
+        echo "Error: HTTP $http_code - $error_message" >&2
+        exit 1
+    fi
+}
+
+# Function: pick_latest_version
+pick_latest_version() {
+    local versions="$1"
+    local latest_release=""
+    local latest_prerelease=""
+    local latest_dev=""
+
     for version in $versions; do
         if [[ $version =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
             latest_release=$version
         elif [[ $version =~ ^[0-9]+\.[0-9]+\.[0-9]+-[a-zA-Z0-9]+$ ]]; then
             latest_prerelease=$version
-        elif [[ $version =~ ^[0-9]+\.[0-9]+\.[0-9]+-g[a-f0-9]+$ ]]; then
+        elif [[ $version =~ ^[0-9]+\.[0-9]+\.[0-9]+-g[a-f0-9]+$ || $version =~ ^.+$ ]]; then
             latest_dev=$version
         fi
     done
-    latest_version=$latest_release
-    [[ -z $latest_version ]] && latest_version=$latest_prerelease
-    [[ -z $latest_version ]] && latest_version=$latest_dev
 
-    output=$(echo $output | jq --arg id "$package" --arg version "$latest_version" \
-        '.searchResult[0].packages += [{"id": $id, "latestVersion": $version}]')
-done
+    [[ -n $latest_release ]] && echo "$latest_release" && return
+    [[ -n $latest_prerelease ]] && echo "$latest_prerelease" && return
+    echo "$latest_dev"
+}
 
-# Step 3: Get all containers
-containers=$(curl -s -H "Authorization: Bearer $TOKEN" \
-    -H "Accept: application/vnd.github+json" \
-    "https://api.github.com/orgs/$ORG_NAME/packages?package_type=container" | jq -r '.[].name')
+# Function: process_packages
+process_packages() {
+    local packages
+    packages=$(api_call "packages?package_type=nuget" | jq -r '.[].name')
 
-# Step 4: Process containers
-for container in $containers; do
-    tags=$(curl -s -H "Authorization: Bearer $TOKEN" \
-        -H "Accept: application/vnd.github+json" \
-        "https://api.github.com/orgs/$ORG_NAME/packages/container/$container/versions" | jq -r '.[0].metadata.container.tags[]')
+    for package in $packages; do
+        local versions
+        versions=$(api_call "packages/nuget/$package/versions" | jq -r '.[].name')
 
-    if [[ -z "$tags" ]]; then
-        echo "Warning: No tags found for container $container"
-        latest_tag="unknown"
-    else
-        latest_tag=$(echo "$tags" | head -n 1)
-    fi
+        local latest_version
+        latest_version=$(pick_latest_version "$versions")
 
-    # Append to containers array
-    output=$(echo $output | jq --arg id "$container" --arg version "$latest_tag" \
-        '.searchResult[0].containers += [{"id": $id, "latestVersion": $version}]')
-done
+        # Append to packages array
+        output=$(echo "$output" | jq --arg id "$package" --arg version "$latest_version" \
+            '.searchResult[0].packages += [{"id": $id, "latestVersion": $version}]')
+    done
+}
 
-echo $output | jq
+# Function: process_containers
+process_containers() {
+    local containers
+    containers=$(api_call "packages?package_type=container" | jq -r '.[].name')
+
+    for container in $containers; do
+        local tags
+        tags=$(api_call "packages/container/$container/versions" | jq -r '.[0].metadata.container.tags[]')
+
+        if [[ -z "$tags" ]]; then
+            echo "Warning: No tags found for container $container" >&2
+            latest_tag="unknown"
+        else
+            latest_tag=$(pick_latest_version "$tags")
+            # Skip invalid or "unknown" tags
+            if [[ "$latest_tag" == "unknown" ]]; then
+                echo "Warning: No valid tags found for container $container" >&2
+                continue
+            fi
+        fi
+
+        # Append to containers array
+        output=$(echo "$output" | jq --arg id "$container" --arg version "$latest_tag" \
+            '.searchResult[0].containers += [{"id": $id, "latestVersion": $version}]')
+    done
+}
+
+# Main Script
+output='{"searchResult":[{"sourceName":"'"$ORG_NAME"'","packages":[],"containers":[]}]}'
+
+process_packages
+process_containers
+
+# Final Output
+echo "$output" | jq
