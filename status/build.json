@@ -60,7 +60,7 @@
   },
   "deathcrab-source-generation": {
     "build": {
-      "main": "failure",
+      "main": "success",
       "release": "success"
     },
     "subtree-pull": {
