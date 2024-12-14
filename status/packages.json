@@ -20,6 +20,10 @@
           "latestVersion": "2.0.3"
         },
         {
+          "id": "DeathCrab.AspNet",
+          "latestVersion": "2.0.44"
+        },
+        {
           "id": "DeathCrab.AspNet.OpenApi.Swashbuckle",
           "latestVersion": "3.0.13"
         },
@@ -30,10 +34,6 @@
         {
           "id": "DeathCrab.AspNet.OpenApi.Operations",
           "latestVersion": "3.0.13"
-        },
-        {
-          "id": "DeathCrab.AspNet",
-          "latestVersion": "2.0.44"
         },
         {
           "id": "DeathCrab.AspNet.Protobuf",
