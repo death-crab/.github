@@ -13,6 +13,7 @@ jobs:
       status-path: status
       package-file: packages.json
       build-status-file: build.json
+      commit-message: Update build status for repository ${{ github.event.client_payload.repository }} [bot]
       
     steps:
     - name: Checkout SCM
@@ -71,6 +72,5 @@ jobs:
     - if: always()
       name: Push to SCM
       run: |
-        cd ${{ env.status-path }}       
-        commit_message="Update build status for repository ${{ github.event.client_payload.repository }} [bot]"
-        git diff --cached --quiet || (git commit -m $commit_message && git push)
+        cd ${{ env.status-path }}
+        git diff --cached --quiet || (git commit -m ${{ env.commit-message }} && git push)
