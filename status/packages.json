@@ -8,16 +8,16 @@
           "latestVersion": "2.0.52"
         },
         {
-          "id": "DeathCrab.Model.Generators",
-          "latestVersion": "6.0.5"
-        },
-        {
           "id": "DeathCrab.Data.Sql",
           "latestVersion": "2.0.3"
         },
         {
           "id": "DeathCrab.AspNet.OpenApi.Schema",
           "latestVersion": "3.0.13"
+        },
+        {
+          "id": "DeathCrab.Model.Generators",
+          "latestVersion": "6.0.5"
         },
         {
           "id": "DeathCrab.AspNet",
