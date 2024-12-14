@@ -22,7 +22,7 @@ jobs:
       env:
         # Note that GitHub Apps cannot access packages. This has to be performed via the GITHUB_TOKEN or a user PAT.
         # https://github.com/orgs/community/discussions/24636#discussioncomment-11352345
-        GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_API_TOKEN: ${{ secrets.MY_PERSONAL_PAT }}
         
       run: |
         cd status
