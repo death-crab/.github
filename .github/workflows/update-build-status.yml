@@ -6,6 +6,9 @@ on:
     types:
       - update-status
 
+permissions:
+  contents: write
+
 jobs:
   update-build-status:
     runs-on: ubuntu-latest
