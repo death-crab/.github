@@ -89,5 +89,10 @@
       "main": "success",
       "release": "success"
     }
+  },
+  "deathcrab-wpf": {
+    "build": {
+      "features/github-import": "success"
+    }
   }
 }
