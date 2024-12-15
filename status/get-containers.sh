@@ -39,7 +39,6 @@ api_call() {
     fi
 }
 
-# Function: pick_latest_version
 pick_latest_version() {
     local versions="$1"
     local latest_release=""
@@ -48,18 +47,26 @@ pick_latest_version() {
 
     for version in $versions; do
         if [[ $version =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            latest_release=$version
+            if [[ -z $latest_release || $(printf "%s\n%s" "$latest_release" "$version" | sort -V | tail -n 1) == "$version" ]]; then
+                latest_release=$version
+            fi
         elif [[ $version =~ ^[0-9]+\.[0-9]+\.[0-9]+-[a-zA-Z0-9]+$ ]]; then
-            latest_prerelease=$version
+            if [[ -z $latest_prerelease || $(printf "%s\n%s" "$latest_prerelease" "$version" | sort -V | tail -n 1) == "$version" ]]; then
+                latest_prerelease=$version
+            fi
         elif [[ $version =~ ^[0-9]+\.[0-9]+\.[0-9]+-g[a-f0-9]+$ || $version =~ ^.+$ ]]; then
-            latest_dev=$version
+            if [[ -z $latest_dev || $(printf "%s\n%s" "$latest_dev" "$version" | sort -V | tail -n 1) == "$version" ]]; then
+                latest_dev=$version
+            fi
         fi
     done
 
+    # Return the latest version in priority order: release > prerelease > dev
     [[ -n $latest_release ]] && echo "$latest_release" && return
     [[ -n $latest_prerelease ]] && echo "$latest_prerelease" && return
-    echo "$latest_dev"
+    [[ -n $latest_dev ]] && echo "$latest_dev" && return
 }
+
 
 # Function: process_packages
 process_packages() {
