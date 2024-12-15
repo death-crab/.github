@@ -57,15 +57,15 @@
         },
         {
           "id": "DeathCrab.Wpf",
-          "latestVersion": "2.0.9-g87253faa8b"
+          "latestVersion": "2.0.3"
         },
         {
           "id": "DeathCrab.Wpf.Media.Gltf",
-          "latestVersion": "2.0.9-g87253faa8b"
+          "latestVersion": "2.0.3"
         },
         {
           "id": "DeathCrab.Wpf.Media.Svg",
-          "latestVersion": "2.0.9-g87253faa8b"
+          "latestVersion": "2.0.3"
         }
       ],
       "containers": [
