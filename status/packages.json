@@ -56,16 +56,16 @@
           "latestVersion": "1.0.46-beta"
         },
         {
+          "id": "DeathCrab.Wpf",
+          "latestVersion": "2.0.9-g87253faa8b"
+        },
+        {
           "id": "DeathCrab.Wpf.Media.Gltf",
-          "latestVersion": "2.0.8-g60d4e2f1bf"
+          "latestVersion": "2.0.9-g87253faa8b"
         },
         {
           "id": "DeathCrab.Wpf.Media.Svg",
-          "latestVersion": "2.0.8-g60d4e2f1bf"
-        },
-        {
-          "id": "DeathCrab.Wpf",
-          "latestVersion": "2.0.8-g60d4e2f1bf"
+          "latestVersion": "2.0.9-g87253faa8b"
         }
       ],
       "containers": [
