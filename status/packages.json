@@ -70,6 +70,10 @@
         {
           "id": "DeathCrab.Rest",
           "latestVersion": "2.0.1"
+        },
+        {
+          "id": "DeathCrab.OpenApi.Generators",
+          "latestVersion": "2.0.7-g3545298ade"
         }
       ],
       "containers": [
