@@ -100,7 +100,8 @@
   "deathcrab-rest": {
     "build": {
       "features/github-import": "success",
-      "main": "success"
+      "main": "success",
+      "release": "success"
     }
   }
 }
