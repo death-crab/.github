@@ -96,5 +96,10 @@
       "main": "success",
       "release": "success"
     }
+  },
+  "deathcrab-rest": {
+    "build": {
+      "features/github-import": "failure"
+    }
   }
 }
