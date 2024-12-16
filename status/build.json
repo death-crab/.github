@@ -99,7 +99,7 @@
   },
   "deathcrab-rest": {
     "build": {
-      "features/github-import": "failure"
+      "features/github-import": "success"
     }
   }
 }

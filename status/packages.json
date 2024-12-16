@@ -66,6 +66,10 @@
         {
           "id": "DeathCrab.Wpf.Media.Svg",
           "latestVersion": "2.0.3"
+        },
+        {
+          "id": "DeathCrab.Rest",
+          "latestVersion": "2.0.4-geb9e4fa82c"
         }
       ],
       "containers": [
