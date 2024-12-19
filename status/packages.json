@@ -20,19 +20,19 @@
           "latestVersion": "3.0.17"
         },
         {
-          "id": "DeathCrab.AspNet",
-          "latestVersion": "2.0.46"
-        },
-        {
-          "id": "DeathCrab.AspNet.OpenApi.Swashbuckle",
-          "latestVersion": "3.0.17"
-        },
-        {
           "id": "DeathCrab.AspNet.OpenApi.Operations",
           "latestVersion": "3.0.17"
         },
         {
           "id": "DeathCrab.AspNet.OpenApi",
+          "latestVersion": "3.0.17"
+        },
+        {
+          "id": "DeathCrab.AspNet",
+          "latestVersion": "2.0.46"
+        },
+        {
+          "id": "DeathCrab.AspNet.OpenApi.Swashbuckle",
           "latestVersion": "3.0.17"
         },
         {
@@ -79,7 +79,7 @@
       "containers": [
         {
           "id": "rigpimp-api-admin-aot-base",
-          "latestVersion": "1.0.68-beta.g1fde8d4e5b"
+          "latestVersion": "1.0.69-beta.g2af3141232"
         },
         {
           "id": "rigpimp-api-admin-jit-base",
