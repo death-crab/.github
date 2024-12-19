@@ -79,7 +79,7 @@
       "features/schema-package": "success",
       "features/admin-schema-package": "success",
       "release": "success",
-      "features/21-fix-schema-package": "failure"
+      "features/21-fix-schema-package": "success"
     }
   },
   "rigpimp-db": {
