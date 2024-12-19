@@ -74,7 +74,7 @@
   },
   "rigpimp-api": {
     "build": {
-      "main": "success",
+      "main": "failure",
       "features/build-publish": "success",
       "features/schema-package": "success",
       "features/admin-schema-package": "success",
