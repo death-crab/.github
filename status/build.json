@@ -87,7 +87,7 @@
       "main": "success"
     },
     "database": {
-      "main": "success",
+      "main": "failure",
       "release": "success"
     }
   },
