@@ -8,16 +8,16 @@
           "latestVersion": "2.0.65"
         },
         {
-          "id": "DeathCrab.Data.Sql",
-          "latestVersion": "2.0.16"
-        },
-        {
           "id": "DeathCrab.Model.Generators",
           "latestVersion": "6.0.7"
         },
         {
           "id": "DeathCrab.AspNet.OpenApi.Schema",
           "latestVersion": "3.0.17"
+        },
+        {
+          "id": "DeathCrab.Data.Sql",
+          "latestVersion": "2.0.16"
         },
         {
           "id": "DeathCrab.AspNet.OpenApi.Swashbuckle",
@@ -28,12 +28,12 @@
           "latestVersion": "3.0.17"
         },
         {
-          "id": "DeathCrab.AspNet",
-          "latestVersion": "2.0.46"
-        },
-        {
           "id": "DeathCrab.AspNet.OpenApi",
           "latestVersion": "3.0.17"
+        },
+        {
+          "id": "DeathCrab.AspNet",
+          "latestVersion": "2.0.46"
         },
         {
           "id": "DeathCrab.AspNet.Protobuf",
@@ -79,7 +79,7 @@
       "containers": [
         {
           "id": "rigpimp-api-admin-aot-base",
-          "latestVersion": "1.0.73-beta.g59e2b5a0d3"
+          "latestVersion": "1.0.54-beta.g1428d23960"
         },
         {
           "id": "rigpimp-api-admin-jit-base",
