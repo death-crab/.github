@@ -24,12 +24,12 @@
           "latestVersion": "3.0.17"
         },
         {
-          "id": "DeathCrab.AspNet.OpenApi.Operations",
-          "latestVersion": "3.0.17"
-        },
-        {
           "id": "DeathCrab.AspNet",
           "latestVersion": "2.0.46"
+        },
+        {
+          "id": "DeathCrab.AspNet.OpenApi.Operations",
+          "latestVersion": "3.0.17"
         },
         {
           "id": "DeathCrab.AspNet.OpenApi",
@@ -83,7 +83,7 @@
         },
         {
           "id": "rigpimp-api-admin-jit-base",
-          "latestVersion": "1.0.73-beta.g59e2b5a0d3"
+          "latestVersion": "1.0.54-beta.g1428d23960"
         }
       ]
     }
