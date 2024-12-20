@@ -116,6 +116,9 @@
       "features/github-import": "success",
       "main": "success",
       "release": "success"
+    },
+    "subtree-pull": {
+      "main": "failure"
     }
   }
 }
