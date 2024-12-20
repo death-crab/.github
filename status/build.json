@@ -115,7 +115,7 @@
   "deathcrab-openapi": {
     "build": {
       "features/github-import": "success",
-      "main": "success",
+      "main": "failure",
       "release": "success"
     },
     "subtree-pull": {
