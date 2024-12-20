@@ -119,7 +119,7 @@
       "release": "success"
     },
     "subtree-pull": {
-      "main": "failure"
+      "main": "success"
     },
     "notify-downstream": {
       "main": "failure"
