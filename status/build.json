@@ -17,7 +17,7 @@
   },
   "deathcrab-base": {
     "build": {
-      "main": "failure",
+      "main": "success",
       "release": "success"
     },
     "subtree-pull": {
