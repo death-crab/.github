@@ -12,12 +12,12 @@
           "latestVersion": "2.0.16"
         },
         {
-          "id": "DeathCrab.AspNet.OpenApi.Schema",
-          "latestVersion": "3.0.17"
-        },
-        {
           "id": "DeathCrab.Model.Generators",
           "latestVersion": "6.0.7"
+        },
+        {
+          "id": "DeathCrab.AspNet.OpenApi.Schema",
+          "latestVersion": "3.0.17"
         },
         {
           "id": "DeathCrab.AspNet",
