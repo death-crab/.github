@@ -99,7 +99,7 @@
     },
     "subtree-pull": {
       "features/github-import": "failure",
-      "main": "failure"
+      "main": "success"
     }
   },
   "deathcrab-rest": {
