@@ -98,7 +98,8 @@
       "release": "success"
     },
     "subtree-pull": {
-      "features/github-import": "failure"
+      "features/github-import": "failure",
+      "main": "failure"
     }
   },
   "deathcrab-rest": {
