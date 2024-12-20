@@ -94,7 +94,7 @@
   "deathcrab-wpf": {
     "build": {
       "features/github-import": "success",
-      "main": "failure",
+      "main": "success",
       "release": "success"
     },
     "subtree-pull": {
