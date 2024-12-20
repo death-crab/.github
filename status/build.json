@@ -120,6 +120,9 @@
     },
     "subtree-pull": {
       "main": "failure"
+    },
+    "notify-downstream": {
+      "main": "failure"
     }
   }
 }
