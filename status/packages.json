@@ -52,16 +52,16 @@
           "latestVersion": "2.0.28"
         },
         {
-          "id": "DeathCrab.OpenApi.Generators",
-          "latestVersion": "2.0.3"
-        },
-        {
           "id": "RigPimp.Api.Admin.Schema",
           "latestVersion": "1.0.46-beta"
         },
         {
           "id": "DeathCrab.Rest",
           "latestVersion": "2.0.1"
+        },
+        {
+          "id": "DeathCrab.OpenApi.Generators",
+          "latestVersion": "2.0.3"
         },
         {
           "id": "DeathCrab.Wpf.Media.Gltf",
