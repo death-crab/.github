@@ -20,12 +20,12 @@
           "latestVersion": "3.0.17"
         },
         {
-          "id": "DeathCrab.AspNet",
+          "id": "DeathCrab.AspNet.Protobuf",
           "latestVersion": "2.0.46"
         },
         {
-          "id": "DeathCrab.AspNet.OpenApi",
-          "latestVersion": "3.0.17"
+          "id": "DeathCrab.AspNet",
+          "latestVersion": "2.0.46"
         },
         {
           "id": "DeathCrab.AspNet.OpenApi.Operations",
@@ -36,8 +36,8 @@
           "latestVersion": "3.0.17"
         },
         {
-          "id": "DeathCrab.AspNet.Protobuf",
-          "latestVersion": "2.0.46"
+          "id": "DeathCrab.AspNet.OpenApi",
+          "latestVersion": "3.0.17"
         },
         {
           "id": "RigPimp.Db.Schema",
@@ -52,16 +52,16 @@
           "latestVersion": "2.0.28"
         },
         {
-          "id": "RigPimp.Api.Admin.Schema",
-          "latestVersion": "1.0.47-beta"
-        },
-        {
           "id": "DeathCrab.OpenApi.Generators",
           "latestVersion": "2.0.4"
         },
         {
           "id": "DeathCrab.Rest",
           "latestVersion": "2.0.1"
+        },
+        {
+          "id": "RigPimp.Api.Admin.Schema",
+          "latestVersion": "1.0.47-beta"
         },
         {
           "id": "DeathCrab.Wpf.Media.Gltf",
