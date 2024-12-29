@@ -24,11 +24,11 @@
           "latestVersion": "2.0.46"
         },
         {
-          "id": "DeathCrab.AspNet.OpenApi.Operations",
+          "id": "DeathCrab.AspNet.OpenApi.Swashbuckle",
           "latestVersion": "3.0.17"
         },
         {
-          "id": "DeathCrab.AspNet.OpenApi.Swashbuckle",
+          "id": "DeathCrab.AspNet.OpenApi.Operations",
           "latestVersion": "3.0.17"
         },
         {
