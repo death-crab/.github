@@ -125,5 +125,10 @@
     "notify-downstream": {
       "main": "failure"
     }
+  },
+  "rigpimp-client": {
+    "build": {
+      "features/git-import": "failure"
+    }
   }
 }
