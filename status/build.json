@@ -107,7 +107,7 @@
       "features/github-import": "success",
       "main": "success",
       "release": "success",
-      "features/stream-accommodation": "failure"
+      "features/stream-accommodation": "success"
     },
     "subtree-pull": {
       "main": "success"

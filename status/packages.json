@@ -24,15 +24,15 @@
           "latestVersion": "2.0.89-g7c89ceaf97"
         },
         {
+          "id": "DeathCrab.AspNet.OpenApi.Swashbuckle",
+          "latestVersion": "3.0.17"
+        },
+        {
           "id": "DeathCrab.AspNet.OpenApi",
           "latestVersion": "3.0.17"
         },
         {
           "id": "DeathCrab.AspNet.OpenApi.Operations",
-          "latestVersion": "3.0.17"
-        },
-        {
-          "id": "DeathCrab.AspNet.OpenApi.Swashbuckle",
           "latestVersion": "3.0.17"
         },
         {
@@ -52,16 +52,16 @@
           "latestVersion": "2.0.28"
         },
         {
+          "id": "DeathCrab.OpenApi.Generators",
+          "latestVersion": "2.0.4"
+        },
+        {
           "id": "RigPimp.Api.Admin.Schema",
           "latestVersion": "1.0.47-beta"
         },
         {
           "id": "DeathCrab.Rest",
           "latestVersion": "2.0.1"
-        },
-        {
-          "id": "DeathCrab.OpenApi.Generators",
-          "latestVersion": "2.0.4"
         },
         {
           "id": "DeathCrab.Wpf.Media.Svg",
