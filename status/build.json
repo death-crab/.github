@@ -128,7 +128,8 @@
   },
   "rigpimp-client": {
     "build": {
-      "features/git-import": "success"
+      "features/git-import": "success",
+      "release": "success"
     }
   }
 }
