@@ -52,16 +52,20 @@
           "latestVersion": "2.1.1"
         },
         {
-          "id": "RigPimp.Api.Admin.Schema",
-          "latestVersion": "1.0.47-beta"
-        },
-        {
           "id": "DeathCrab.OpenApi.Generators",
           "latestVersion": "2.0.4"
         },
         {
+          "id": "RigPimp.Api.Admin.Schema",
+          "latestVersion": "1.0.47-beta"
+        },
+        {
           "id": "DeathCrab.Tools.DacpacConverter",
           "latestVersion": "2.0.28"
+        },
+        {
+          "id": "DeathCrab.Wpf.Media.Svg",
+          "latestVersion": "2.0.3"
         },
         {
           "id": "DeathCrab.Wpf",
@@ -69,10 +73,6 @@
         },
         {
           "id": "DeathCrab.Wpf.Media.Gltf",
-          "latestVersion": "2.0.3"
-        },
-        {
-          "id": "DeathCrab.Wpf.Media.Svg",
           "latestVersion": "2.0.3"
         },
         {
