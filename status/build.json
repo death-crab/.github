@@ -118,7 +118,8 @@
       "features/github-import": "success",
       "main": "success",
       "release": "success",
-      "features/generator_rename": "success"
+      "features/generator_rename": "success",
+      "features/metadata-refactor": "success"
     },
     "subtree-pull": {
       "main": "success"
