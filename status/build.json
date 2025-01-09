@@ -119,7 +119,8 @@
       "main": "failure",
       "release": "success",
       "features/generator_rename": "success",
-      "features/metadata-refactor": "success"
+      "features/metadata-refactor": "success",
+      "features/16_invalid_parameter_type": "failure"
     },
     "subtree-pull": {
       "main": "success"
