@@ -116,7 +116,7 @@
   "deathcrab-openapi": {
     "build": {
       "features/github-import": "success",
-      "main": "success",
+      "main": "failure",
       "release": "success",
       "features/generator_rename": "success",
       "features/metadata-refactor": "success",
