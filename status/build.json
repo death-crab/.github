@@ -122,7 +122,8 @@
       "features/metadata-refactor": "success",
       "features/16_invalid_parameter_type": "failure",
       "features/operation_signatures": "success",
-      "features/cleanup": "success"
+      "features/cleanup": "success",
+      "features/syntax_refactor": "success"
     },
     "subtree-pull": {
       "main": "success"
