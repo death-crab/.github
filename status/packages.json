@@ -48,12 +48,12 @@
           "latestVersion": "3.0.37"
         },
         {
-          "id": "DeathCrab.Rest",
-          "latestVersion": "2.1.1"
-        },
-        {
           "id": "DeathCrab.OpenApi.Generators",
           "latestVersion": "3.0.12-g439f5c4b45"
+        },
+        {
+          "id": "DeathCrab.Rest",
+          "latestVersion": "2.1.1"
         },
         {
           "id": "RigPimp.Api.Admin.Schema",
