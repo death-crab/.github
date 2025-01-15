@@ -125,7 +125,8 @@
       "features/cleanup": "success",
       "features/syntax_refactor": "success",
       "features/23_symbol_properties": "success",
-      "features/23_correct_naming_conflict": "success"
+      "features/23_correct_naming_conflict": "success",
+      "features/cleanup_metadata": "success"
     },
     "subtree-pull": {
       "main": "success"
