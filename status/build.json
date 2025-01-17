@@ -139,7 +139,8 @@
   "rigpimp-client": {
     "build": {
       "features/git-import": "success",
-      "release": "success"
+      "release": "success",
+      "openapi_generator_upgrade": "success"
     }
   }
 }
