@@ -129,7 +129,8 @@
       "features/cleanup_metadata": "success",
       "features/28_syntax_generation": "success",
       "features/33_better_array_support": "success",
-      "features/33_stack_overflow_fixes": "success"
+      "features/33_stack_overflow_fixes": "success",
+      "features/38_model_description": "success"
     },
     "subtree-pull": {
       "main": "success"
