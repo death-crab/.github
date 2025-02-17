@@ -64,6 +64,10 @@
           "latestVersion": "2.0.28"
         },
         {
+          "id": "RigPimp.Client.Admin",
+          "latestVersion": "1.0.17"
+        },
+        {
           "id": "DeathCrab.Wpf.Media.Svg",
           "latestVersion": "2.0.3"
         },
@@ -74,10 +78,6 @@
         {
           "id": "DeathCrab.Wpf.Media.Gltf",
           "latestVersion": "2.0.3"
-        },
-        {
-          "id": "RigPimp.Client.Admin",
-          "latestVersion": "1.0.17"
         }
       ],
       "containers": [
