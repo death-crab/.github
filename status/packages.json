@@ -8,24 +8,24 @@
           "latestVersion": "2.0.65"
         },
         {
-          "id": "DeathCrab.Model.Generators",
-          "latestVersion": "6.0.7"
-        },
-        {
           "id": "DeathCrab.Data.Sql",
           "latestVersion": "2.0.16"
-        },
-        {
-          "id": "DeathCrab.AspNet",
-          "latestVersion": "2.0.91-ge8d38de715"
         },
         {
           "id": "DeathCrab.AspNet.OpenApi.Schema",
           "latestVersion": "3.0.17"
         },
         {
-          "id": "DeathCrab.AspNet.Protobuf",
+          "id": "DeathCrab.Model.Generators",
+          "latestVersion": "6.0.7"
+        },
+        {
+          "id": "DeathCrab.AspNet",
           "latestVersion": "2.0.91-ge8d38de715"
+        },
+        {
+          "id": "DeathCrab.AspNet.OpenApi.Operations",
+          "latestVersion": "3.0.17"
         },
         {
           "id": "DeathCrab.AspNet.OpenApi.Swashbuckle",
@@ -36,8 +36,8 @@
           "latestVersion": "3.0.17"
         },
         {
-          "id": "DeathCrab.AspNet.OpenApi.Operations",
-          "latestVersion": "3.0.17"
+          "id": "DeathCrab.AspNet.Protobuf",
+          "latestVersion": "2.0.91-ge8d38de715"
         },
         {
           "id": "RigPimp.Db.Schema",
@@ -52,12 +52,12 @@
           "latestVersion": "4.1.3"
         },
         {
-          "id": "DeathCrab.Rest",
-          "latestVersion": "2.1.3"
-        },
-        {
           "id": "RigPimp.Api.Admin.Schema",
           "latestVersion": "1.0.62-rc2"
+        },
+        {
+          "id": "DeathCrab.Rest",
+          "latestVersion": "2.1.3"
         },
         {
           "id": "DeathCrab.Tools.DacpacConverter",
