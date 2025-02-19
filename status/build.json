@@ -79,7 +79,8 @@
       "features/schema-package": "success",
       "features/admin-schema-package": "success",
       "release": "success",
-      "features/21-fix-schema-package": "success"
+      "features/21-fix-schema-package": "success",
+      "features/34_35_GetModelResourceData_Fixes": "success"
     }
   },
   "rigpimp-db": {
