@@ -83,11 +83,11 @@
       "containers": [
         {
           "id": "rigpimp-api-admin-aot-base",
-          "latestVersion": "1.0.62-rc2.g509f05269e"
+          "latestVersion": "1.0.61-rc2.g64d6044725"
         },
         {
           "id": "rigpimp-api-admin-jit-base",
-          "latestVersion": "1.0.62-rc2.g509f05269e"
+          "latestVersion": "1.0.61-rc2.g64d6044725"
         }
       ]
     }
