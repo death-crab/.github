@@ -64,16 +64,16 @@
           "latestVersion": "1.0.17"
         },
         {
-          "id": "DeathCrab.Wpf",
-          "latestVersion": "2.0.3"
-        },
-        {
           "id": "DeathCrab.Wpf.Media.Gltf",
           "latestVersion": "2.0.3"
         },
         {
           "id": "DeathCrab.Tools.DacpacConverter",
           "latestVersion": "2.0.28"
+        },
+        {
+          "id": "DeathCrab.Wpf",
+          "latestVersion": "2.0.3"
         },
         {
           "id": "DeathCrab.Wpf.Media.Svg",

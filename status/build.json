@@ -153,7 +153,8 @@
   },
   "rigpimp-repository": {
     "build": {
-      "features/github-import": "success"
+      "features/github-import": "success",
+      "main": "success"
     }
   }
 }
