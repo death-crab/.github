@@ -150,5 +150,10 @@
       "openapi_generator_upgrade": "success",
       "main": "success"
     }
+  },
+  "rigpimp-repository": {
+    "build": {
+      "features/github-import": "failure"
+    }
   }
 }
