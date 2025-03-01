@@ -4,10 +4,6 @@
       "sourceName": "death-crab",
       "packages": [
         {
-          "id": "DeathCrab.Base",
-          "latestVersion": "2.0.65"
-        },
-        {
           "id": "DeathCrab.AspNet",
           "latestVersion": "2.0.92-gb1fb40dcce"
         },
@@ -64,6 +60,10 @@
           "latestVersion": "1.0.17"
         },
         {
+          "id": "DeathCrab.Wpf.Media.Svg",
+          "latestVersion": "2.0.3"
+        },
+        {
           "id": "DeathCrab.Wpf",
           "latestVersion": "2.0.3"
         },
@@ -72,12 +72,12 @@
           "latestVersion": "2.0.28"
         },
         {
-          "id": "DeathCrab.Wpf.Media.Svg",
-          "latestVersion": "2.0.3"
-        },
-        {
           "id": "RigPimp.Repository.Admin",
           "latestVersion": "1.0.15-rc2"
+        },
+        {
+          "id": "DeathCrab.Base",
+          "latestVersion": "2.0.65"
         },
         {
           "id": "DeathCrab.Wpf.Media.Gltf",

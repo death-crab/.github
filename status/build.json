@@ -157,5 +157,10 @@
       "main": "success",
       "release": "success"
     }
+  },
+  "rigpimp-editor": {
+    "build": {
+      "features/github_migration": "failure"
+    }
   }
 }
