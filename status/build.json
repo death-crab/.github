@@ -155,7 +155,8 @@
     "build": {
       "features/github-import": "success",
       "main": "success",
-      "release": "success"
+      "release": "success",
+      "features/2_fix_package_dependencies": "success"
     }
   },
   "rigpimp-editor": {
