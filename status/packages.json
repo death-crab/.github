@@ -76,12 +76,12 @@
           "latestVersion": "2.0.3"
         },
         {
-          "id": "DeathCrab.Tools.DacpacConverter",
-          "latestVersion": "2.0.28"
+          "id": "RigPimp.Repository.Admin",
+          "latestVersion": "1.0.19-rc2"
         },
         {
-          "id": "RigPimp.Repository.Admin",
-          "latestVersion": "1.0.15-rc2"
+          "id": "DeathCrab.Tools.DacpacConverter",
+          "latestVersion": "2.0.28"
         }
       ],
       "containers": [
