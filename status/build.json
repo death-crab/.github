@@ -149,7 +149,8 @@
       "release": "success",
       "openapi_generator_upgrade": "success",
       "main": "success",
-      "features/07_ienumerable_support": "success"
+      "features/07_ienumerable_support": "success",
+      "features/09_folder_rename": "success"
     }
   },
   "rigpimp-repository": {
