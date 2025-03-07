@@ -44,6 +44,14 @@
           "latestVersion": "3.0.37"
         },
         {
+          "id": "DeathCrab.OpenApi.Generators",
+          "latestVersion": "4.1.3"
+        },
+        {
+          "id": "RigPimp.Api.Admin.Schema",
+          "latestVersion": "1.0.62-rc2"
+        },
+        {
           "id": "DeathCrab.Rest",
           "latestVersion": "2.1.3"
         },
@@ -68,20 +76,12 @@
           "latestVersion": "1.0.15-rc2"
         },
         {
-          "id": "DeathCrab.OpenApi.Generators",
-          "latestVersion": "4.1.3"
-        },
-        {
           "id": "DeathCrab.Base",
           "latestVersion": "2.0.65"
         },
         {
           "id": "DeathCrab.Wpf",
           "latestVersion": "2.0.3"
-        },
-        {
-          "id": "RigPimp.Api.Admin.Schema",
-          "latestVersion": "1.0.62-rc2"
         }
       ],
       "containers": [
