@@ -163,7 +163,7 @@
   },
   "rigpimp-editor": {
     "build": {
-      "features/github_migration": "failure"
+      "features/github_migration": "success"
     }
   }
 }
