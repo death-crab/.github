@@ -52,10 +52,6 @@
           "latestVersion": "1.0.62-rc2"
         },
         {
-          "id": "DeathCrab.Rest",
-          "latestVersion": "2.1.3"
-        },
-        {
           "id": "RigPimp.Client.Admin",
           "latestVersion": "1.0.17"
         },
@@ -82,6 +78,10 @@
         {
           "id": "DeathCrab.Wpf",
           "latestVersion": "2.0.3"
+        },
+        {
+          "id": "DeathCrab.Rest",
+          "latestVersion": "2.1.3"
         }
       ],
       "containers": [
