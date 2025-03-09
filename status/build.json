@@ -165,7 +165,7 @@
     "build": {
       "features/github_migration": "success",
       "main": "success",
-      "features/05_namespace_change": "success"
+      "features/05_namespace_change": "failure"
     }
   }
 }
