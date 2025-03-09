@@ -164,7 +164,8 @@
   "rigpimp-editor": {
     "build": {
       "features/github_migration": "success",
-      "main": "success"
+      "main": "success",
+      "features/05_namespace_change": "success"
     }
   }
 }
