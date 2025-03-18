@@ -167,5 +167,10 @@
       "main": "success",
       "features/05_namespace_change": "success"
     }
+  },
+  "deathcrab-msi": {
+    "build": {
+      "main": "failure"
+    }
   }
 }
