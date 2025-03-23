@@ -172,5 +172,10 @@
     "build": {
       "main": "failure"
     }
+  },
+  "deathcrab-cabinet": {
+    "build": {
+      "main": "failure"
+    }
   }
 }
