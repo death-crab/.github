@@ -175,7 +175,8 @@
   },
   "deathcrab-cabinet": {
     "build": {
-      "main": "success"
+      "main": "success",
+      "release": "success"
     }
   }
 }
