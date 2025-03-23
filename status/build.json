@@ -179,7 +179,7 @@
       "release": "success"
     },
     "subtree-pull": {
-      "main": "failure"
+      "main": "success"
     }
   }
 }
