@@ -64,6 +64,10 @@
           "latestVersion": "2.0.28"
         },
         {
+          "id": "DeathCrab.Cabinet",
+          "latestVersion": "1.0.4"
+        },
+        {
           "id": "RigPimp.Client.Admin",
           "latestVersion": "1.0.26-rc2"
         },
@@ -84,8 +88,8 @@
           "latestVersion": "2.1.3"
         },
         {
-          "id": "DeathCrab.Cabinet",
-          "latestVersion": "1.0.4"
+          "id": "DeathCrab.Msi",
+          "latestVersion": "1.0.4-g2e1c5d21bb"
         }
       ],
       "containers": [
