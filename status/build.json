@@ -170,7 +170,7 @@
   },
   "deathcrab-msi": {
     "build": {
-      "main": "failure"
+      "main": "success"
     }
   },
   "deathcrab-cabinet": {
