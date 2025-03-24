@@ -171,6 +171,9 @@
   "deathcrab-msi": {
     "build": {
       "main": "success"
+    },
+    "subtree-pull": {
+      "main": "success"
     }
   },
   "deathcrab-cabinet": {
