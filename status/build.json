@@ -181,5 +181,10 @@
     "subtree-pull": {
       "main": "success"
     }
+  },
+  "deathcrab-package-template": {
+    "build": {
+      "main": "failure"
+    }
   }
 }
