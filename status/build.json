@@ -179,7 +179,8 @@
   "deathcrab-cabinet": {
     "build": {
       "main": "success",
-      "release": "success"
+      "release": "success",
+      "features/01_dotnet_standard": "failure"
     },
     "subtree-pull": {
       "main": "success"
