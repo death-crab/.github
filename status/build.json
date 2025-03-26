@@ -180,7 +180,7 @@
     "build": {
       "main": "success",
       "release": "success",
-      "features/01_dotnet_standard": "failure"
+      "features/01_dotnet_standard": "success"
     },
     "subtree-pull": {
       "main": "success"
