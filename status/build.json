@@ -173,7 +173,7 @@
       "main": "success",
       "release": "success",
       "features/01_support_netstandard": "success",
-      "features/04_string_safety": "success"
+      "features/04_string_safety": "failure"
     },
     "subtree-pull": {
       "main": "success"
