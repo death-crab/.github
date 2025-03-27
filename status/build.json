@@ -170,7 +170,8 @@
   },
   "deathcrab-msi": {
     "build": {
-      "main": "success"
+      "main": "success",
+      "release": "success"
     },
     "subtree-pull": {
       "main": "success"
