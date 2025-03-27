@@ -182,7 +182,8 @@
     "build": {
       "main": "success",
       "release": "success",
-      "features/01_dotnet_standard": "success"
+      "features/01_dotnet_standard": "success",
+      "features/04_interop_stability": "success"
     },
     "subtree-pull": {
       "main": "success"
