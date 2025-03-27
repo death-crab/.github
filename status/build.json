@@ -171,7 +171,8 @@
   "deathcrab-msi": {
     "build": {
       "main": "success",
-      "release": "success"
+      "release": "success",
+      "features/01_support_netstandard": "success"
     },
     "subtree-pull": {
       "main": "success"
