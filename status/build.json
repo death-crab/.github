@@ -185,7 +185,8 @@
       "release": "success",
       "features/01_dotnet_standard": "success",
       "features/04_interop_stability": "success",
-      "features/07_memory_allocation": "success"
+      "features/07_memory_allocation": "success",
+      "features/09_file_handling_improvements": "success"
     },
     "subtree-pull": {
       "main": "success"
