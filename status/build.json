@@ -170,7 +170,7 @@
   },
   "deathcrab-msi": {
     "build": {
-      "main": "failure",
+      "main": "success",
       "release": "success",
       "features/01_support_netstandard": "success",
       "features/04_string_safety": "success"
