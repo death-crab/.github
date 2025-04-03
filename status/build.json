@@ -200,7 +200,8 @@
   },
   "deathcrab-build-msi": {
     "build": {
-      "main": "failure"
+      "main": "failure",
+      "features/initial_build_fixes": "failure"
     }
   }
 }
