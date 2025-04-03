@@ -197,5 +197,10 @@
     "build": {
       "main": "failure"
     }
+  },
+  "deathcrab-build-msi": {
+    "build": {
+      "main": "failure"
+    }
   }
 }
