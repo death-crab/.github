@@ -64,12 +64,12 @@
           "latestVersion": "1.1.5"
         },
         {
-          "id": "DeathCrab.Tools.DacpacConverter",
-          "latestVersion": "2.0.28"
-        },
-        {
           "id": "DeathCrab.Msi",
           "latestVersion": "1.0.7"
+        },
+        {
+          "id": "DeathCrab.Tools.DacpacConverter",
+          "latestVersion": "2.0.28"
         },
         {
           "id": "RigPimp.Client.Admin",
