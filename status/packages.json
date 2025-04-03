@@ -90,6 +90,10 @@
         {
           "id": "DeathCrab.Rest",
           "latestVersion": "2.1.3"
+        },
+        {
+          "id": "DeathCrab.Build.Msi",
+          "latestVersion": "1.0.12-gb9df991645"
         }
       ],
       "containers": [
