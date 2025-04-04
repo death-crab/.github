@@ -174,7 +174,8 @@
       "release": "success",
       "features/01_support_netstandard": "success",
       "features/04_string_safety": "success",
-      "features/06_version_validation": "success"
+      "features/06_version_validation": "success",
+      "features/15_validation_fixes": "success"
     },
     "subtree-pull": {
       "main": "success"
