@@ -177,7 +177,7 @@
       "features/06_version_validation": "success",
       "features/15_validation_fixes": "success",
       "features/23_system_test": "success",
-      "features/25_unit_test_refactor": "failure"
+      "features/25_unit_test_refactor": "success"
     },
     "subtree-pull": {
       "main": "success"
