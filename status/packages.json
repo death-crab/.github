@@ -52,12 +52,12 @@
           "latestVersion": "4.1.3"
         },
         {
-          "id": "RigPimp.Api.Admin.Schema",
-          "latestVersion": "1.0.62-rc2"
-        },
-        {
           "id": "DeathCrab.Cabinet",
           "latestVersion": "1.2.6"
+        },
+        {
+          "id": "RigPimp.Api.Admin.Schema",
+          "latestVersion": "1.0.62-rc2"
         },
         {
           "id": "DeathCrab.Wpf",
