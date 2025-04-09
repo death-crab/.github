@@ -179,7 +179,8 @@
       "features/23_system_test": "success",
       "features/25_unit_test_refactor": "success",
       "features/29_folder_hierarchies": "success",
-      "features/31_multiversion_installs": "success"
+      "features/31_multiversion_installs": "success",
+      "features/38_package_depdendencies": "failure"
     },
     "subtree-pull": {
       "main": "success"
