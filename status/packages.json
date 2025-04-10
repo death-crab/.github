@@ -60,12 +60,12 @@
           "latestVersion": "1.0.62-rc2"
         },
         {
-          "id": "DeathCrab.Wpf",
-          "latestVersion": "2.0.3"
-        },
-        {
           "id": "DeathCrab.Msi",
           "latestVersion": "1.2.37"
+        },
+        {
+          "id": "DeathCrab.Wpf",
+          "latestVersion": "2.0.3"
         },
         {
           "id": "DeathCrab.Tools.DacpacConverter",
