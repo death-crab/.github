@@ -44,12 +44,12 @@
           "latestVersion": "1.0.26"
         },
         {
-          "id": "DeathCrab.SourceGeneration",
-          "latestVersion": "3.0.37"
-        },
-        {
           "id": "DeathCrab.Cabinet",
           "latestVersion": "1.2.6"
+        },
+        {
+          "id": "DeathCrab.SourceGeneration",
+          "latestVersion": "3.0.37"
         },
         {
           "id": "DeathCrab.OpenApi.Generators",
