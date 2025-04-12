@@ -209,7 +209,7 @@
       "main": "success",
       "features/initial_build_fixes": "success",
       "features/compiler_help_links": "failure",
-      "features/documentation": "failure"
+      "features/documentation": "success"
     }
   }
 }
