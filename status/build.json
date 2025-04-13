@@ -212,7 +212,8 @@
       "features/compiler_help_links": "failure",
       "features/documentation": "success",
       "release": "success",
-      "features/msi_package_upgrade": "success"
+      "features/msi_package_upgrade": "success",
+      "features/06_target_path_structure": "success"
     }
   }
 }
