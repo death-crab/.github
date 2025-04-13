@@ -181,7 +181,8 @@
       "features/29_folder_hierarchies": "success",
       "features/31_multiversion_installs": "success",
       "features/38_package_depdendencies": "success",
-      "features/file_guid_fixes": "success"
+      "features/file_guid_fixes": "success",
+      "features/50_version_parsing_fix": "success"
     },
     "subtree-pull": {
       "main": "success"
