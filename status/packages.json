@@ -52,12 +52,12 @@
           "latestVersion": "3.0.37"
         },
         {
-          "id": "DeathCrab.OpenApi.Generators",
-          "latestVersion": "4.1.3"
-        },
-        {
           "id": "DeathCrab.Msi",
           "latestVersion": "1.2.45"
+        },
+        {
+          "id": "DeathCrab.OpenApi.Generators",
+          "latestVersion": "4.1.3"
         },
         {
           "id": "RigPimp.Api.Admin.Schema",
