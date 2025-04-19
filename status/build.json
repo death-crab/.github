@@ -218,5 +218,10 @@
       "features/manifesto": "success",
       "features/11_protocol_17": "success"
     }
+  },
+  "deathcrab-build-publish-hash": {
+    "subtree-pull": {
+      "main": "success"
+    }
   }
 }
