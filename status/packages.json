@@ -9,7 +9,7 @@
         },
         {
           "id": "DeathCrab.AspNet",
-          "latestVersion": "2.0.92-gb1fb40dcce"
+          "latestVersion": "2.0.93-gd7ed6ccfbd"
         },
         {
           "id": "DeathCrab.Data.Sql",
@@ -24,10 +24,6 @@
           "latestVersion": "6.0.7"
         },
         {
-          "id": "DeathCrab.AspNet.OpenApi.Operations",
-          "latestVersion": "3.0.17"
-        },
-        {
           "id": "DeathCrab.AspNet.OpenApi.Swashbuckle",
           "latestVersion": "3.0.17"
         },
@@ -36,8 +32,12 @@
           "latestVersion": "3.0.17"
         },
         {
+          "id": "DeathCrab.AspNet.OpenApi.Operations",
+          "latestVersion": "3.0.17"
+        },
+        {
           "id": "DeathCrab.AspNet.Protobuf",
-          "latestVersion": "2.0.92-gb1fb40dcce"
+          "latestVersion": "2.0.93-gd7ed6ccfbd"
         },
         {
           "id": "DeathCrab.Cabinet",
