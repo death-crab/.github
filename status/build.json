@@ -224,7 +224,8 @@
       "main": "success"
     },
     "build": {
-      "main": "failure"
+      "main": "failure",
+      "features/01_assembly_verification": "failure"
     }
   }
 }
