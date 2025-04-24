@@ -94,6 +94,10 @@
         {
           "id": "RigPimp.Repository.Admin",
           "latestVersion": "1.0.19-rc2"
+        },
+        {
+          "id": "DeathCrab.Build.PublishHash",
+          "latestVersion": "1.0.10-g02f9361ef5"
         }
       ],
       "containers": [
