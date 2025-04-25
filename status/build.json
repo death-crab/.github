@@ -227,5 +227,10 @@
       "main": "success",
       "features/01_assembly_verification": "failure"
     }
+  },
+  "deathcrab-build-verify": {
+    "build": {
+      "features/04_rename_namespace": "failure"
+    }
   }
 }
