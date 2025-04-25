@@ -230,7 +230,7 @@
   },
   "deathcrab-build-verify": {
     "build": {
-      "features/04_rename_namespace": "failure"
+      "features/04_rename_namespace": "success"
     }
   }
 }

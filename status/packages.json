@@ -98,6 +98,10 @@
         {
           "id": "DeathCrab.Build.PublishHash",
           "latestVersion": "1.0.13-gc7082cb832"
+        },
+        {
+          "id": "DeathCrab.Build.Verify.Publish",
+          "latestVersion": "1.0.11-g95bc304c4b"
         }
       ],
       "containers": [
