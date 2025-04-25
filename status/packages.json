@@ -102,6 +102,10 @@
         {
           "id": "DeathCrab.Build.Verify.Publish",
           "latestVersion": "1.0.13-ge03cfd94f7"
+        },
+        {
+          "id": "DeathCrab.Build.Verify",
+          "latestVersion": "1.0.14-g21dcc31c86"
         }
       ],
       "containers": [
