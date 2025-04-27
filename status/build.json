@@ -231,7 +231,7 @@
   "deathcrab-build-verify": {
     "build": {
       "features/04_rename_namespace": "success",
-      "main": "success",
+      "main": "failure",
       "features/06_combine_packages": "success"
     }
   }
