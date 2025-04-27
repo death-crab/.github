@@ -232,7 +232,7 @@
     "build": {
       "features/04_rename_namespace": "success",
       "main": "success",
-      "features/06_combine_packages": "success"
+      "features/06_combine_packages": "failure"
     }
   }
 }
