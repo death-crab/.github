@@ -75,13 +75,7 @@
   "rigpimp-api": {
     "build": {
       "main": "success",
-      "features/build-publish": "success",
-      "features/schema-package": "success",
-      "features/admin-schema-package": "success",
       "release": "success",
-      "features/21-fix-schema-package": "success",
-      "features/34_35_GetModelResourceData_Fixes": "success",
-      "features/33_schema_filename": "success"
     }
   },
   "rigpimp-db": {
@@ -95,7 +89,6 @@
   },
   "deathcrab-wpf": {
     "build": {
-      "features/github-import": "success",
       "main": "success",
       "release": "success"
     },
@@ -106,10 +99,8 @@
   },
   "deathcrab-rest": {
     "build": {
-      "features/github-import": "success",
       "main": "success",
       "release": "success",
-      "features/stream-accommodation": "success"
     },
     "subtree-pull": {
       "main": "success"
@@ -117,24 +108,8 @@
   },
   "deathcrab-openapi": {
     "build": {
-      "features/github-import": "success",
       "main": "success",
       "release": "success",
-      "features/generator_rename": "success",
-      "features/metadata-refactor": "success",
-      "features/16_invalid_parameter_type": "failure",
-      "features/operation_signatures": "success",
-      "features/cleanup": "success",
-      "features/syntax_refactor": "success",
-      "features/23_symbol_properties": "success",
-      "features/23_correct_naming_conflict": "success",
-      "features/cleanup_metadata": "success",
-      "features/28_syntax_generation": "success",
-      "features/33_better_array_support": "success",
-      "features/33_stack_overflow_fixes": "success",
-      "features/38_model_description": "success",
-      "41_common_return_types": "success",
-      "features/41_common_return_types": "success"
     },
     "subtree-pull": {
       "main": "success"
@@ -145,44 +120,25 @@
   },
   "rigpimp-client": {
     "build": {
-      "features/git-import": "success",
       "release": "success",
-      "openapi_generator_upgrade": "success",
       "main": "success",
-      "features/07_ienumerable_support": "success",
-      "features/09_folder_rename": "success"
     }
   },
   "rigpimp-repository": {
     "build": {
-      "features/github-import": "success",
       "main": "success",
       "release": "success",
-      "features/2_fix_package_dependencies": "success"
     }
   },
   "rigpimp-editor": {
     "build": {
-      "features/github_migration": "success",
       "main": "success",
-      "features/05_namespace_change": "success"
     }
   },
   "deathcrab-msi": {
     "build": {
       "main": "success",
       "release": "success",
-      "features/01_support_netstandard": "success",
-      "features/04_string_safety": "success",
-      "features/06_version_validation": "success",
-      "features/15_validation_fixes": "success",
-      "features/23_system_test": "success",
-      "features/25_unit_test_refactor": "success",
-      "features/29_folder_hierarchies": "success",
-      "features/31_multiversion_installs": "success",
-      "features/38_package_depdendencies": "success",
-      "features/file_guid_fixes": "success",
-      "features/50_version_parsing_fix": "success"
     },
     "subtree-pull": {
       "main": "success"
@@ -192,10 +148,6 @@
     "build": {
       "main": "success",
       "release": "success",
-      "features/01_dotnet_standard": "success",
-      "features/04_interop_stability": "success",
-      "features/07_memory_allocation": "success",
-      "features/09_file_handling_improvements": "success"
     },
     "subtree-pull": {
       "main": "success"
@@ -209,14 +161,6 @@
   "deathcrab-build-msi": {
     "build": {
       "main": "success",
-      "features/initial_build_fixes": "success",
-      "features/compiler_help_links": "failure",
-      "features/documentation": "success",
-      "release": "success",
-      "features/msi_package_upgrade": "success",
-      "features/06_target_path_structure": "success",
-      "features/manifesto": "success",
-      "features/11_protocol_17": "success"
     }
   },
   "deathcrab-build-publish-hash": {
@@ -225,15 +169,11 @@
     },
     "build": {
       "main": "success",
-      "features/01_assembly_verification": "failure"
     }
   },
   "deathcrab-build-verify": {
     "build": {
-      "features/04_rename_namespace": "success",
       "main": "success",
-      "features/06_combine_packages": "success",
-      "features/14_split_verifier": "success"
     }
   }
 }
