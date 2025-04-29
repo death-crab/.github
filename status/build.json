@@ -1,179 +1,179 @@
 {
-  "deathcrab-aspnet": {
-    "build": {
-      "main": "success"
+    "deathcrab-aspnet": {
+        "build": {
+            "main": "success"
+        },
+        "subtree-pull": {
+            "main": "success"
+        }
     },
-    "subtree-pull": {
-      "main": "success"
-    }
-  },
-  "deathcrab-aspnet-openapi": {
-    "build": {
-      "main": "success"
+    "deathcrab-aspnet-openapi": {
+        "build": {
+            "main": "success"
+        },
+        "subtree-pull": {
+            "main": "success"
+        }
     },
-    "subtree-pull": {
-      "main": "success"
-    }
-  },
-  "deathcrab-base": {
-    "build": {
-      "main": "success",
-      "release": "success"
+    "deathcrab-base": {
+        "build": {
+            "main": "success",
+            "release": "success"
+        },
+        "subtree-pull": {
+            "main": "success"
+        }
     },
-    "subtree-pull": {
-      "main": "success"
-    }
-  },
-  "deathcrab-data": {
-    "build": {
-      "main": "success",
-      "release": "success"
+    "deathcrab-data": {
+        "build": {
+            "main": "success",
+            "release": "success"
+        },
+        "subtree-pull": {
+            "main": "success"
+        }
     },
-    "subtree-pull": {
-      "main": "success"
-    }
-  },
-  "deathcrab-dacpac-converter": {
-    "build": {
-      "main": "success"
+    "deathcrab-dacpac-converter": {
+        "build": {
+            "main": "success"
+        },
+        "subtree-pull": {
+            "main": "success"
+        }
     },
-    "subtree-pull": {
-      "main": "success"
-    }
-  },
-  "deathcrab-model": {
-    "build": {
-      "main": "success",
-      "release": "success"
+    "deathcrab-model": {
+        "build": {
+            "main": "success",
+            "release": "success"
+        },
+        "subtree-pull": {
+            "main": "success"
+        }
     },
-    "subtree-pull": {
-      "main": "success"
-    }
-  },
-  "deathcrab-package-shared": {
-    "notify-downstream-repos": {
-      "main": "success"
+    "deathcrab-package-shared": {
+        "notify-downstream-repos": {
+            "main": "success"
+        },
+        "notify-downstream": {
+            "main": "success"
+        }
     },
-    "notify-downstream": {
-      "main": "success"
-    }
-  },
-  "deathcrab-source-generation": {
-    "build": {
-      "main": "success",
-      "release": "success"
+    "deathcrab-source-generation": {
+        "build": {
+            "main": "success",
+            "release": "success"
+        },
+        "subtree-pull": {
+            "main": "success"
+        }
     },
-    "subtree-pull": {
-      "main": "success"
-    }
-  },
-  ".github": {
-    "update-build-status": {
-      "main": "success"
-    }
-  },
-  "rigpimp-api": {
-    "build": {
-      "main": "success",
-      "release": "success",
-    }
-  },
-  "rigpimp-db": {
-    "build-and-publish": {
-      "main": "success"
+    ".github": {
+        "update-build-status": {
+            "main": "success"
+        }
     },
-    "database": {
-      "main": "success",
-      "release": "success"
-    }
-  },
-  "deathcrab-wpf": {
-    "build": {
-      "main": "success",
-      "release": "success"
+    "rigpimp-api": {
+        "build": {
+            "main": "success",
+            "release": "success"
+        }
     },
-    "subtree-pull": {
-      "features/github-import": "failure",
-      "main": "success"
-    }
-  },
-  "deathcrab-rest": {
-    "build": {
-      "main": "success",
-      "release": "success",
+    "rigpimp-db": {
+        "build-and-publish": {
+            "main": "success"
+        },
+        "database": {
+            "main": "success",
+            "release": "success"
+        }
     },
-    "subtree-pull": {
-      "main": "success"
-    }
-  },
-  "deathcrab-openapi": {
-    "build": {
-      "main": "success",
-      "release": "success",
+    "deathcrab-wpf": {
+        "build": {
+            "main": "success",
+            "release": "success"
+        },
+        "subtree-pull": {
+            "features/github-import": "failure",
+            "main": "success"
+        }
     },
-    "subtree-pull": {
-      "main": "success"
+    "deathcrab-rest": {
+        "build": {
+            "main": "success",
+            "release": "success"
+        },
+        "subtree-pull": {
+            "main": "success"
+        }
     },
-    "notify-downstream": {
-      "main": "failure"
-    }
-  },
-  "rigpimp-client": {
-    "build": {
-      "release": "success",
-      "main": "success",
-    }
-  },
-  "rigpimp-repository": {
-    "build": {
-      "main": "success",
-      "release": "success",
-    }
-  },
-  "rigpimp-editor": {
-    "build": {
-      "main": "success",
-    }
-  },
-  "deathcrab-msi": {
-    "build": {
-      "main": "success",
-      "release": "success",
+    "deathcrab-openapi": {
+        "build": {
+            "main": "success",
+            "release": "success"
+        },
+        "subtree-pull": {
+            "main": "success"
+        },
+        "notify-downstream": {
+            "main": "failure"
+        }
     },
-    "subtree-pull": {
-      "main": "success"
-    }
-  },
-  "deathcrab-cabinet": {
-    "build": {
-      "main": "success",
-      "release": "success",
+    "rigpimp-client": {
+        "build": {
+            "release": "success",
+            "main": "success"
+        }
     },
-    "subtree-pull": {
-      "main": "success"
-    }
-  },
-  "deathcrab-package-template": {
-    "build": {
-      "main": "failure"
-    }
-  },
-  "deathcrab-build-msi": {
-    "build": {
-      "main": "success",
-    }
-  },
-  "deathcrab-build-publish-hash": {
-    "subtree-pull": {
-      "main": "success"
+    "rigpimp-repository": {
+        "build": {
+            "main": "success",
+            "release": "success"
+        }
     },
-    "build": {
-      "main": "success",
+    "rigpimp-editor": {
+        "build": {
+            "main": "success"
+        }
+    },
+    "deathcrab-msi": {
+        "build": {
+            "main": "success",
+            "release": "success"
+        },
+        "subtree-pull": {
+            "main": "success"
+        }
+    },
+    "deathcrab-cabinet": {
+        "build": {
+            "main": "success",
+            "release": "success"
+        },
+        "subtree-pull": {
+            "main": "success"
+        }
+    },
+    "deathcrab-package-template": {
+        "build": {
+            "main": "failure"
+        }
+    },
+    "deathcrab-build-msi": {
+        "build": {
+            "main": "success"
+        }
+    },
+    "deathcrab-build-publish-hash": {
+        "subtree-pull": {
+            "main": "success"
+        },
+        "build": {
+            "main": "success"
+        }
+    },
+    "deathcrab-build-verify": {
+        "build": {
+            "main": "success"
+        }
     }
-  },
-  "deathcrab-build-verify": {
-    "build": {
-      "main": "success",
-    }
-  }
 }
