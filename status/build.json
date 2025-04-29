@@ -160,7 +160,7 @@
   },
   "deathcrab-build-msi": {
     "build": {
-      "main": "success",
+      "main": "failure",
       "features/14_nuget_promotion": "success"
     }
   },

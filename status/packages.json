@@ -12,6 +12,10 @@
           "latestVersion": "2.0.93-gd7ed6ccfbd"
         },
         {
+          "id": "DeathCrab.Cabinet",
+          "latestVersion": "1.2.6"
+        },
+        {
           "id": "DeathCrab.Data.Sql",
           "latestVersion": "2.0.16"
         },
@@ -22,10 +26,6 @@
         {
           "id": "DeathCrab.Model.Generators",
           "latestVersion": "6.0.7"
-        },
-        {
-          "id": "DeathCrab.Cabinet",
-          "latestVersion": "1.2.6"
         },
         {
           "id": "DeathCrab.AspNet.OpenApi.Operations",
