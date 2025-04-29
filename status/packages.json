@@ -24,6 +24,10 @@
           "latestVersion": "6.0.7"
         },
         {
+          "id": "DeathCrab.Cabinet",
+          "latestVersion": "1.2.6"
+        },
+        {
           "id": "DeathCrab.AspNet.OpenApi.Operations",
           "latestVersion": "3.0.17"
         },
@@ -38,10 +42,6 @@
         {
           "id": "DeathCrab.AspNet.Protobuf",
           "latestVersion": "2.0.93-gd7ed6ccfbd"
-        },
-        {
-          "id": "DeathCrab.Cabinet",
-          "latestVersion": "1.2.6"
         },
         {
           "id": "RigPimp.Db.Schema",
