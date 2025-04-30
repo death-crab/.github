@@ -176,5 +176,10 @@
     "build": {
       "main": "success"
     }
+  },
+  "deathcrab-service-verify": {
+    "deploy": {
+      "main": "success"
+    }
   }
 }
