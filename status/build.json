@@ -179,7 +179,7 @@
   },
   "deathcrab-service-verify": {
     "deploy": {
-      "main": "failure"
+      "main": "success"
     }
   }
 }
