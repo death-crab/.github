@@ -181,5 +181,10 @@
     "deploy": {
       "main": "success"
     }
+  },
+  "deathcrab-service-badge": {
+    "deploy": {
+      "main": "success"
+    }
   }
 }
