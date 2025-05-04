@@ -184,7 +184,7 @@
   },
   "deathcrab-service-badge": {
     "deploy": {
-      "main": "failure"
+      "main": "success"
     }
   }
 }
