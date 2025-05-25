@@ -72,11 +72,11 @@
           "latestVersion": "1.0.26-rc2"
         },
         {
-          "id": "DeathCrab.Wpf.Media.Svg",
+          "id": "DeathCrab.Wpf",
           "latestVersion": "2.0.3"
         },
         {
-          "id": "DeathCrab.Wpf",
+          "id": "DeathCrab.Wpf.Media.Svg",
           "latestVersion": "2.0.3"
         },
         {
@@ -97,7 +97,7 @@
         },
         {
           "id": "DeathCrab.Build.Verify",
-          "latestVersion": "1.0.29-g621bf064c8"
+          "latestVersion": "1.0.30-g21b2873533"
         }
       ],
       "containers": [
