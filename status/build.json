@@ -174,7 +174,8 @@
   },
   "deathcrab-build-verify": {
     "build": {
-      "main": "success"
+      "main": "success",
+      "features/build-fixes": "success"
     }
   },
   "deathcrab-service-verify": {
