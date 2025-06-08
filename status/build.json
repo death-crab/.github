@@ -178,7 +178,8 @@
       "features/build-fixes": "success",
       "feature/34-local-build-flag": "success",
       "feature/38-envar-lookup-service": "success",
-      "feature/36-publish-conflict-test": "success"
+      "feature/36-publish-conflict-test": "success",
+      "feature/43-force-flag": "success"
     }
   },
   "deathcrab-service-verify": {
