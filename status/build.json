@@ -180,7 +180,8 @@
       "feature/38-envar-lookup-service": "success",
       "feature/36-publish-conflict-test": "success",
       "feature/43-force-flag": "success",
-      "feature/3-build-package-verification": "success"
+      "feature/3-build-package-verification": "success",
+      "feature/40-revocation-warnings": "success"
     }
   },
   "deathcrab-service-verify": {
