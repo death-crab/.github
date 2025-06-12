@@ -181,7 +181,7 @@
       "feature/36-publish-conflict-test": "success",
       "feature/43-force-flag": "success",
       "feature/3-build-package-verification": "success",
-      "feature/40-revocation-warnings": "success"
+      "feature/40-revocation-warnings": "failure"
     }
   },
   "deathcrab-service-verify": {
