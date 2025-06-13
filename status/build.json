@@ -174,7 +174,7 @@
   },
   "deathcrab-build-verify": {
     "build": {
-      "main": "success",
+      "main": "failure",
       "features/build-fixes": "success",
       "feature/34-local-build-flag": "success",
       "feature/38-envar-lookup-service": "success",
