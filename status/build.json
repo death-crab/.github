@@ -182,7 +182,7 @@
       "feature/43-force-flag": "success",
       "feature/3-build-package-verification": "success",
       "feature/40-revocation-warnings": "failure",
-      "feature/49-deterministic-dotnet-install": "success"
+      "feature/49-deterministic-dotnet-install": "failure"
     }
   },
   "deathcrab-service-verify": {
