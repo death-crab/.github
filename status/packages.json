@@ -13,19 +13,23 @@
         },
         {
           "id": "DeathCrab.AspNet",
-          "latestVersion": "2.0.93-gd7ed6ccfbd"
+          "latestVersion": "2.0.94-g9d47998f20"
         },
         {
           "id": "DeathCrab.Data.Sql",
           "latestVersion": "2.0.16"
         },
         {
+          "id": "DeathCrab.Model.Generators",
+          "latestVersion": "6.0.7"
+        },
+        {
           "id": "DeathCrab.AspNet.OpenApi.Schema",
           "latestVersion": "3.0.17"
         },
         {
-          "id": "DeathCrab.Model.Generators",
-          "latestVersion": "6.0.7"
+          "id": "DeathCrab.AspNet.OpenApi",
+          "latestVersion": "3.0.17"
         },
         {
           "id": "DeathCrab.AspNet.OpenApi.Operations",
@@ -36,12 +40,8 @@
           "latestVersion": "3.0.17"
         },
         {
-          "id": "DeathCrab.AspNet.OpenApi",
-          "latestVersion": "3.0.17"
-        },
-        {
           "id": "DeathCrab.AspNet.Protobuf",
-          "latestVersion": "2.0.93-gd7ed6ccfbd"
+          "latestVersion": "2.0.94-g9d47998f20"
         },
         {
           "id": "RigPimp.Db.Schema",
@@ -53,7 +53,7 @@
         },
         {
           "id": "DeathCrab.Msi",
-          "latestVersion": "1.2.45"
+          "latestVersion": "1.3.2"
         },
         {
           "id": "DeathCrab.OpenApi.Generators",
@@ -72,7 +72,7 @@
           "latestVersion": "1.0.26-rc2"
         },
         {
-          "id": "DeathCrab.Wpf",
+          "id": "DeathCrab.Wpf.Media.Gltf",
           "latestVersion": "2.0.3"
         },
         {
@@ -80,7 +80,7 @@
           "latestVersion": "2.0.3"
         },
         {
-          "id": "DeathCrab.Wpf.Media.Gltf",
+          "id": "DeathCrab.Wpf",
           "latestVersion": "2.0.3"
         },
         {
@@ -89,25 +89,29 @@
         },
         {
           "id": "DeathCrab.Build.Msi",
-          "latestVersion": "1.0.16"
+          "latestVersion": "1.0.31"
+        },
+        {
+          "id": "DeathCrab.Build.Verify",
+          "latestVersion": "1.0.76"
         },
         {
           "id": "DeathCrab.Tools.DacpacConverter",
           "latestVersion": "2.0.28"
         },
         {
-          "id": "DeathCrab.Build.Verify",
-          "latestVersion": "1.0.56-g1fe9efff4a"
+          "id": "DeathCrab.Msi.Runtime",
+          "latestVersion": "1.2.90-g52a5ae3a8e"
         }
       ],
       "containers": [
         {
           "id": "rigpimp-api-admin-aot-base",
-          "latestVersion": "1.0.62-rc2"
+          "latestVersion": "1.0.63-rc2.g8edb99c4a6"
         },
         {
           "id": "rigpimp-api-admin-jit-base",
-          "latestVersion": "1.0.62-rc2"
+          "latestVersion": "1.0.63-rc2.g8edb99c4a6"
         }
       ]
     }
