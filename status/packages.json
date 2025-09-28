@@ -13,19 +13,19 @@
         },
         {
           "id": "DeathCrab.AspNet",
-          "latestVersion": "2.0.94-g9d47998f20"
+          "latestVersion": "2.0.95-g2f821cc4db"
         },
         {
           "id": "DeathCrab.Data.Sql",
           "latestVersion": "2.0.16"
         },
         {
-          "id": "DeathCrab.Model.Generators",
-          "latestVersion": "6.0.7"
-        },
-        {
           "id": "DeathCrab.AspNet.OpenApi.Schema",
           "latestVersion": "3.0.17"
+        },
+        {
+          "id": "DeathCrab.Model.Generators",
+          "latestVersion": "6.0.7"
         },
         {
           "id": "DeathCrab.AspNet.OpenApi",
@@ -41,7 +41,7 @@
         },
         {
           "id": "DeathCrab.AspNet.Protobuf",
-          "latestVersion": "2.0.94-g9d47998f20"
+          "latestVersion": "2.0.95-g2f821cc4db"
         },
         {
           "id": "RigPimp.Db.Schema",
@@ -72,15 +72,15 @@
           "latestVersion": "1.0.26-rc2"
         },
         {
-          "id": "DeathCrab.Wpf.Media.Gltf",
-          "latestVersion": "2.0.3"
-        },
-        {
           "id": "DeathCrab.Wpf.Media.Svg",
           "latestVersion": "2.0.3"
         },
         {
           "id": "DeathCrab.Wpf",
+          "latestVersion": "2.0.3"
+        },
+        {
+          "id": "DeathCrab.Wpf.Media.Gltf",
           "latestVersion": "2.0.3"
         },
         {
@@ -101,7 +101,7 @@
         },
         {
           "id": "DeathCrab.Msi.Runtime",
-          "latestVersion": "1.2.90-g52a5ae3a8e"
+          "latestVersion": "1.2.94-g98789d7cef"
         }
       ],
       "containers": [
