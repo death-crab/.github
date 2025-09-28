@@ -103,7 +103,7 @@
       "release": "success"
     },
     "subtree-pull": {
-      "main": "success"
+      "main": "failure"
     }
   },
   "deathcrab-openapi": {
